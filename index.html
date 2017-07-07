@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IAS Appraiser System</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+
+
+  <div class="row" style="box-shadow: 0 4px 2px -2px gray;background-color:white;">
+    <div class="col s2"></div>
+    <div class="col s7 center" style="padding-left:30px;padding-right:0px;">
+
+      <nav>
+        <div class="nav-wrapper white">
+          <form>
+            <div class="input-field searchbar">
+              <input id="search" type="search" placeholder="find index number or claim number" required style="padding-top:10px;text-transform:uppercase">
+              <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <div class="col s3 white">
+      <div class="usermenu">
+        <a class="waves-effect btn iasred right" href="#"><i class="material-icons white-text ">settings</i></a>
+        <a class='dropdown-button waves-effect btn iasred right' href='#' data-activates='dropdown3'><i class="material-icons white-text left">perm_identity</i>My Account</a>
+        <!-- Dropdown Structure -->
+        <ul id='dropdown3' class='dropdown-content'>
+          <li><a href="#!">New Assignments</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Scheduled</a></li>
+          <li><a href="#!">Inspected</a></li>
+          <li><a href="#!">Billed</a></li>
+          <li><a href="#!">Overdue</a></li>
+          <li><a href="#!">Paid</a></li>
+          <li><a href="#!">Cancelled</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="page-container">
+    <ul id="slide-out" class="side-nav fixed iasred">
+      <div class="logocorner">
+        <div class="logoleft center"><img height="90px" src="http://www.iasclaimsgroup.com/wp-content/uploads/2013/10/logo.png"></div>
+        <h4 class="center white-text">Terry Earl</h4>
+        <h6 class="center white-text">Owner - Tucson, AZ</h6>
+      </div>
+      <li><a class="white-text skinny" href="#!"><i class="material-icons white-text" style="font-size:25px;">dashboard</i>Dashboard</a></li>
+      <li><a class="white-text skinny" href="#!"><i class="material-icons white-text" style="font-size:25px;">assignment_ind</i>New Assignments</a></li>
+      <li><a class="white-text skinny" href="#!"><i class="material-icons white-text" style="font-size:25px;">account_balance</i>Billing Reports</a></li>
+      <li class="">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header white-text skinny">Add New<i class="material-icons white-text">note_add</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a class="skinny" href="#!">Add New Insurance Profile</a></li>
+                <li><a class="skinny" href="#!">Add New Appraiser</a></li>
+                <li><a class="skinny" href="#!">Add New Shop</a></li>
+                <li><a class="skinny" href="#!">Add New Adjuster</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+
+
+
+    <div class="main-content-area" style="padding:30px;padding-top:0px;padding-bottom:0px;">
+
+      <!-- Widgets Start  -->
+      <div class="row">
+        <!-- Widget 1  -->
+        <div class="col l3 m3 s12">
+          <div class="card">
+            <nav>
+              <div class="nav-wrapper iasred">
+                <div class="col s12">
+                  <a class="brand-logo white-text">Total Billed</a><i class="material-icons right">account_balance</i>
+                </div>
+              </div>
+            </nav>
+            <div class="card-content">
+              <h3 class="skinny center">$22,000</h3>
+              <h6 class="skinny center">Total Accounts Recievable</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Widget 2  -->
+        <div class="col l3 m3 s12">
+          <div class="card">
+            <nav>
+              <div class="nav-wrapper iasred">
+                <div class="col s12">
+                  <a class="brand-logo white-text">Cycle Time</a><i class="material-icons right">loop</i>
+                </div>
+              </div>
+            </nav>
+            <div class="card-content">
+              <h3 class="skinny center">2.3</h3>
+              <h6 class="skinny center">Avg. Days to Complete</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Widget 3 -->
+        <div class="col l3 m3 s12">
+          <div class="card">
+            <nav>
+              <div class="nav-wrapper iasred">
+                <div class="col s12">
+                  <a class="brand-logo white-text">New Assignments</a><i class="material-icons right">assignment_ind</i>
+                </div>
+              </div>
+            </nav>
+            <div class="card-content">
+              <h3 class="skinny center">12</h3>
+              <h6 class="skinny center"> New Assignments</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Widget 4  -->
+        <div class="col l3 m3 s12">
+          <div class="card">
+            <nav>
+              <div class="nav-wrapper iasred">
+                <div class="col s12">
+                  <a class="brand-logo white-text">Active Reminders</a><i class="material-icons right">query_builder</i>
+                </div>
+              </div>
+            </nav>
+            <div class="card-content">
+              <h3 class="skinny center">10</h3>
+              <h6 class="skinny center">Active file reminders</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Widgets End  -->
+
+      <!-- Dashboard Table Start  -->
+
+      <nav>
+        <div class="nav-wrapper iasred">
+          <a href="#!" class="brand-logo white-text" style="margin-left:20px;"><i class="material-icons white-text">assignment_ind</i>Any Status: July 1st, 2017 - July 31st, 2017 </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a class='dropdown-button btn white black-text' href='#' data-activates='dropdown2'>Only show</a>
+
+              <!-- Dropdown Structure -->
+              <ul id='dropdown2' class='dropdown-content'>
+                <li><a href="#!">Show All</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">New Assignments</a></li>
+                <li><a href="#!">Scheduled</a></li>
+                <li><a href="#!">Inspected</a></li>
+                <li><a href="#!">Billed</a></li>
+                <li><a href="#!">Overdue</a></li>
+                <li><a href="#!">Paid</a></li>
+                <li><a href="#!">Cancelled</a></li>
+              </ul>
+            </li>
+            <a class="waves-effect btn white black-text" href="#modal1">Change Dates</a>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="card">
+        <table class="striped centered responsive-table">
+          <thead>
+            <tr>
+              <th>Status</th>
+              <th>Index #</th>
+              <th>Owner</th>
+              <th>Vehicle</th>
+              <th>Date Requested</th>
+              <th>Date Inspected</th>
+              <th>City, State</th>
+              <th>Days Open</th>
+              <th>Appraiser</th>
+            </tr>
+          </thead>
+          <tr class="">
+            <td><span class="label label-warning">In Progress</span></td>
+            <td><a href="/claim">115122ALO</a></td>
+            <td>Tom Smith</td>
+            <td>2007 Toyota 4Runner</td>
+            <td>06/06/16</td>
+            <td>Incomplete</td>
+            <td>Portland, OR</td>
+            <td>5</td>
+            <td>Kevin</td>
+          </tr>
+          <tr class="">
+            <td><span class="label label-warning">In Progress</span></td>
+            <td>115122ALO</td>
+            <td>Tom Smith</td>
+            <td>2007 Toyota 4Runner</td>
+            <td>06/06/16</td>
+            <td>Incomplete</td>
+            <td>Clackamas, OR</td>
+            <td>5</td>
+            <td>Kevin</td>
+          </tr>
+          <tr class="">
+            <td><span class="label label-warning">In Progress</span></td>
+            <td>115122ALO</td>
+            <td>Tom Smith</td>
+            <td>2007 Toyota 4Runner</td>
+            <td>06/06/16</td>
+            <td>Incomplete</td>
+            <td>Longview, WA</td>
+            <td>5</td>
+            <td>Kevin</td>
+          </tr>
+          <tr class="">
+            <td><span class="label label-primary">Assigned</span></td>
+            <td>115122ALO</td>
+            <td>Nick Anderson</td>
+            <td>2003 Ford F-350</td>
+            <td>06/06/16</td>
+            <td>Incomplete</td>
+            <td>Portland, OR</td>
+            <td>5</td>
+            <td>None</td>
+          </tr>
+          <tr class="">
+            <td><span class="label label-primary">Assigned</span></td>
+            <td>115122ALO</td>
+            <td>Nick Anderson</td>
+            <td>2003 Ford F-350</td>
+            <td>06/06/16</td>
+            <td>Incomplete</td>
+            <td>Dalles, OR</td>
+            <td>5</td>
+            <td>None</td>
+          </tr>
+          <tr class="">
+            <td><span class="label label-primary">Assigned</span></td>
+            <td>115122ALO</td>
+            <td>Nick Anderson</td>
+            <td>2003 Ford F-350</td>
+            <td>06/06/16</td>
+            <td>Incomplete</td>
+            <td>Happy Valley, OR</td>
+            <td>5</td>
+            <td>None</td>
+          </tr>
+          <tr class="">
+            <td><span class="label label-primary">Assigned</span></td>
+            <td>115122ALO</td>
+            <td>Kevin Keeland</td>
+            <td>2004 Toyota Camry</td>
+            <td>06/06/16</td>
+            <td>Incomplete</td>
+            <td>Vancouver, WA</td>
+            <td>5</td>
+            <td>None</td>
+          </tr>
+          <tr class="">
+            <td><span class="label label-primary">Assigned</span></td>
+            <td>115122ALO</td>
+            <td>John Doeses</td>
+            <td>2011 Cheverolet Traverse</td>
+            <td>06/06/16</td>
+            <td>Incomplete</td>
+            <td>Vancouver, WA</td>
+            <td>5</td>
+            <td>None</td>
+          </tr>
+          <tr class="">
+            <td><span class="label label-default">Inspected</span></td>
+            <td>115122ALO</td>
+            <td>Todd Sower</td>
+            <td>2010 Dodge Ram</td>
+            <td>06/06/16</td>
+            <td>06/06/16</td>
+            <td>Portland, OR</td>
+            <td>5</td>
+            <td>Brandon</td>
+          </tr>
+          <tr class="">
+            <td><span class="label label-default">Inspected</span></td>
+            <td>115122ALO</td>
+            <td>Mike Haeman</td>
+            <td>2009 Jeep Cherokee</td>
+            <td>06/06/16</td>
+            <td>06/06/16</td>
+            <td>Lake Oswego, OR</td>
+            <td>5</td>
+            <td>Brandon</td>
+          </tr>
+          <tr class="">
+            <td><span class="label label-default">Inspected</span></td>
+            <td>115122ALO</td>
+            <td>Mary Poppins</td>
+            <td>2010 BMW 540i</td>
+            <td>06/06/16</td>
+            <td>06/06/16</td>
+            <td>Portland, OR</td>
+            <td>5</td>
+            <td>Brandon</td>
+          </tr>
+          <tr class="">
+            <td><span class="label label-danger">Overdue</span></td>
+            <td>115122ALO</td>
+            <td>Dario Jawefwf</td>
+            <td>2001 Kia Sportage</td>
+            <td>06/06/16</td>
+            <td>06/06/16</td>
+            <td>Portland, OR</td>
+            <td>5</td>
+            <td>Brandon</td>
+          </tr>
+          <tr class="">
+            <td><span class="label label-success">Paid</span></td>
+            <td>115122ALO</td>
+            <td>Doe</td>
+            <td>2010 Ford Ranger</td>
+            <td>06/06/16</td>
+            <td>06/06/16</td>
+            <td>Lake Oswego, OR</td>
+            <td>5</td>
+            <td>Brandon</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+ <!-- pagination start  -->
+      <div class="row">
+        <div class="col s12 center">
+      <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+      </div>
+      </div>
+ <!-- pagination end  -->
+
+
+      <!-- Dashboard Table End  -->
+
+
+
+    </div>
+    <!-- main-content-area End  -->
+
+
+
+
+
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <!-- Calentim - Date Time Range Picker Here -->
+        <div class="row">
+          <div class="col s12 center">
+            <h4 class="skinny">Choose Dates to review</h4>
+            <img src="img/datepicker.png" height="390px">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+      </div>
+    </div>
+
+
+
+  </div>
+  <!-- entire page container End  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>
