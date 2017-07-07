@@ -85,3 +85,6 @@ input[type=search] {
 .iasred-text {
   color: #7d2e2c !important;
 }
+.widgets-content {
+  padding:10px !important;
+}
