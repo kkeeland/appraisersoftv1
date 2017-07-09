@@ -61,7 +61,7 @@ footer.page-footer {
 
 }
 .logocorner {
-  height:220px;
+  height:275px;
   margin-bottom: 50px;
   border-top: 5px solid #f0ad4e;
 }
@@ -86,5 +86,50 @@ input[type=search] {
   color: #7d2e2c !important;
 }
 .widgets-content {
-  padding:10px !important;
+  padding:5px !important;
+}
+.indexbox {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.card-head {
+    position: relative;
+    line-height: 52px;
+    min-height: 56px;
+    vertical-align: middle;
+    border-radius: 2px 2px 0 0;
+    background-color: #7d2e2c;
+    border-color: #7d2e2c;
+    color: #ffffff;
+}
+/* Circle Avatar Styles */
+
+.circle {
+	line-height: 0;		/* remove line-height */ 
+	display: inline-block;	/* circle wraps image */
+	margin: 5px;
+  border: 2px solid rgba(255,255,255,0.4);
+	border-radius: 50%;	/* relative value */
+	/*box-shadow: 0px 0px 5px rgba(0,0,0,0.4);*/
+	transition: linear 0.25s;
+  height: 75px;
+  width: 75px;
+}
+.circle img {
+	border-radius: 50%;	/* relative value for
+				   adjustable image size */
+}
+.circle:hover {
+	transition: ease-out 0.2s;
+  border: 2px solid rgba(255,255,255,0.8);
+  -webkit-transition: ease-out 0.2s;
+}
+a.circle {
+  color: transparent;
+} /* IE fix: removes blue border */	
+.loggedin-user{
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 0px;
+}
 }
