@@ -66,7 +66,7 @@
                     <img class="circle" src="img/terry.png" height="">
                 </div>
 
-                <h4 class="center white-text loggedin-user">Terry Earl</h4>
+                <h4 class="center white-text loggedin-user" style="font-style: italic;">Terry Earl</h4>
                 <h6 class="center white-text">Owner - Tucson, AZ</h6>
             </div>
             <li><a class="white-text skinny" href="index.html"><i class="material-icons white-text" style="font-size:25px;">dashboard</i>Dashboard</a></li>
@@ -81,7 +81,6 @@
                                 <li><a class="skinny" href="#!">Add New Insurance Profile</a></li>
                                 <li><a class="skinny" href="#!">Add New Appraiser</a></li>
                                 <li><a class="skinny" href="#!">Add New Shop</a></li>
-                                <li><a class="skinny" href="#!">Add New Adjuster</a></li>
                             </ul>
                         </div>
                     </li>
@@ -165,7 +164,7 @@
             <div class="row">
                 <!-- Widget 1  -->
                 <div class="col l12 m12 s12 center">
-                    <a class='dropdown-button waves-effect btn iasred' href='#' data-activates='dropdown4'><i class="material-icons white-text left">subject</i>Menu</a>
+                    <a class='dropdown-button waves-effect btn iasred' style="min-width:185px;" href='#' data-activates='dropdown4'><i class="material-icons white-text left">subject</i>Menu</a>
                     <!-- Dropdown Structure -->
                     <ul id='dropdown4' class='dropdown-content'>
                         <li><a href="#!">Insurance Guidelines</a></li>
@@ -193,13 +192,24 @@
                         <li><a href="filenotes.html">View File Notes</a></li>
                         <li class="divider"></li>
                         <li><a href='#modal2'>Create File Note</a></li>
-
                     </ul>
+                    <a class='dropdown-button waves-effect btn iasred' style="" href='#' data-activates='printdropdown'><i class="material-icons white-text left">subject</i>Print Report</a>
+                    <!-- ezPrintJS for Print Request -->
+                    <ul id='printdropdown' class='dropdown-content'>
+                        <li><a href="#!">Appraisal Request</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#!">Appraiser Report</a></li>
+                        <li><a href="#!">Supplement Report</a></li>
+                        <li><a href="#!">Photos Report</a></li>
+                        <li><a href="#!">Invoice</a></li>
+                        <li><a href="#!">File Notes</a></li>
+                    </ul>
+
                 </div>
             </div>
 
 
-            <div class="row" style="margin-bottom:0px;">
+            <div class="row" style="">
                 <div class="col s12">
                     <ul class="tabs">
                         <li class="tab col s2"><a href="#general">General Info</a></li>
@@ -214,7 +224,7 @@
             </div>
             <!--  General Info Tab Content  -->
 
-            <div class="row" style="margin-bottom:0px;">
+            <div class="row" style="">
                 <div id="general" class="col s12">
                     <div class="row" style="background-color:white;">
                         <div class="col s12" style="padding:30px;">
@@ -226,6 +236,19 @@
                             <div class="row">
                                 <form class="col s12">
                                     <div class="row">
+                                        <div class="row">
+                                            <div class="input-field col s4">
+                                                <select id="assignemnttype">
+                                                    <option value="1">Vehicle</option>
+                                                    <option value="2">Property </option>
+                                                    </select>
+                                                <label for="assignemnttype">Assignment Type</label>
+                                            </div>
+                                            <div class="input-field col s2">
+                                            <input type="text" id="deductible" class="">
+                                            <label for="deductible">Deductible</label>
+                                        </div>
+                                        </div>
                                         <div class="input-field col s4">
                                             <select>
                                                     <option value="" disabled selected>Insurance Profile</option>
@@ -252,17 +275,37 @@
                                         </div>
                                     </div>
                                     <div class="row">
+
+                                        <div class="input-field col s3">
+                                            <input type="text" id="add_adjuster" class="">
+                                            <label for="add_adjuster">Adjuster</label>
+                                        </div>
+                                        <div class="input-field col s3">
+                                            <input type="text" id="add_phone" class="">
+                                            <label for="add_phone">Adjuster Phone</label>
+                                        </div>
+                                        <div class="input-field col s2">
+                                            <input type="text" id="add_phone_ext" class="">
+                                            <label for="add_phone_ext">Adjuster Extension</label>
+                                        </div>
+                                        <div class="input-field col s4">
+                                            <input type="text" id="add_email" class="">
+                                            <label for="add_email">Adjuster Email</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
                                         <div class="input-field col s3">
                                             <input id="claim_number" type="text" class="">
                                             <label for="claim_number">Claim Number</label>
 
                                         </div>
-                                        <div class="input-field col s3">
+                                        <div class="input-field col s2">
                                             <input id="policynumber" type="text" class="">
                                             <label for="policynumber">Policy Number</label>
                                         </div>
                                         <div class="col s4">
-                                            <a class='waves-effect btn iasred' style="" href='#'>Check for Duplicate Policy</a>
+                                            <a class='waves-effect btn iasred valign ' style="" href='#'>Check for Duplicate Policy</a>
                                         </div>
 
                                     </div>
@@ -500,7 +543,6 @@
                                     <label for="clmt_email">Claimant Email</label>
                                 </div>
                             </div>
-                            <!-- end of claimants information area -->
 
 
                         </div>
@@ -592,9 +634,11 @@
 
                             <div class="row">
                                 <div class="input-field col s4">
-                                    <input id="shop_name" type="text" class="">
+                                    <input type="text" id="shop_name" class="shopname">
                                     <label for="shop_name">Shop Name</label>
-
+                                </div>
+                                <div class="col s3">
+                                    <a class='waves-effect btn iasred valign ' style="" href='#'>Add New Shop</a>
                                 </div>
                                 <div class="input-field col s4">
                                     <input id="shop_phone" type="text" class="">
@@ -695,7 +739,7 @@
                             <div class="row">
                                 <div class="input-field col s4">
                                     <input id="other_name" type="text" class="">
-                                    <label for="other_name">Shop Name</label>
+                                    <label for="other_name">Other Name</label>
 
                                 </div>
                                 <div class="input-field col s4">
@@ -789,6 +833,41 @@
                                 </div>
                             </div>
                             <!-- end of Other Location information area -->
+                            <!-- start of fol information area -->
+
+                            <div class="card-head">
+                                <h4 class="skinny" style="padding:10px;">Facts of Loss</h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s4">
+                                    <select multiple>
+                                    <option value="" disabled selected>Select all that apply</option>
+                                    <option value="frontend">Front End</option>
+                                    <option value="rearend">Rear End</option>
+                                    <option value="leftside">Left Side</option>
+                                    <option value="rightside">Right Side</option>
+                                    <option value="roll">Roll</option>
+                                    <option value="underscarriage">Undercarriage</option>
+                                    <option value="fire">Fire</option>
+                                    <option value="vandalism">Vandalism</option>
+
+                                    </select>
+                                    <label>Areas of Damages</label>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <textarea id="summaryofloss" class="materialize-textarea"></textarea>
+                                    <label for="summaryofloss">Summary of Loss</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <textarea id="specialinstructions" class="materialize-textarea"></textarea>
+                                    <label for="specialinstructions">Summary of Loss</label>
+                                </div>
+                            </div>
+                            <!-- end of facts of loss information area -->
 
                         </div>
                     </div>
@@ -897,6 +976,8 @@
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Create Note</a>
         </div>
     </div>
+
+
 
 
     </div>
