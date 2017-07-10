@@ -245,9 +245,9 @@
                                                 <label for="assignemnttype">Assignment Type</label>
                                             </div>
                                             <div class="input-field col s2">
-                                            <input type="text" id="deductible" class="">
-                                            <label for="deductible">Deductible</label>
-                                        </div>
+                                                <input type="text" id="deductible" class="">
+                                                <label for="deductible">Deductible</label>
+                                            </div>
                                         </div>
                                         <div class="input-field col s4">
                                             <select>
@@ -873,7 +873,30 @@
                     </div>
                 </div>
 
-                <div id="imagemanager" class="col s12">Test 4</div>
+                <div id="imagemanager" class="col s12">
+                    <div class="row">
+                        <div id="sortable">
+                            <div class="col s4">
+                                <a class="thumbnail" href="#">
+                                    <img class="img-responsive" width="100%;" src="http://placehold.it/400x300" alt="">
+                                 </a>
+                            <input type="text" style="width:100%" name="LastName" placeholder="Mouse" class="">
+                            </div>
+                            <div class="col s4">
+                                <a class="thumbnail" href="#">
+                                    <img class="img-responsive" width="100%;" src="http://placehold.it/400x300" alt="">
+                                 </a>
+                            <input type="text" style="width:100%" name="LastName" placeholder="Mouse" class="">
+                            </div>
+                            <div class="col s4">
+                                <a class="thumbnail" href="#">
+                                    <img class="img-responsive" width="100%;" src="http://placehold.it/400x300" alt="">
+                                 </a>
+                            <input type="text" style="width:100%" name="LastName" placeholder="Mouse" class="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div id="report" class="col s12">Test 4</div>
                 <div id="suppreport" class="col s12">Test 4</div>
@@ -999,10 +1022,11 @@
 
 
     <!--  Scripts-->
+    
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
-
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/Sortable/1.6.0/Sortable.min.js"></script>
 </body>
 
 </html>

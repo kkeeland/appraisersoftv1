@@ -35,7 +35,20 @@
     },
     minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
   });
+  Sortable.create(sortable, {
+  animation: 200,
+  group: {
+    name: "shared",
+    pull: "clone",
+    revertClone: true,
+  },
+  sort: true
+});
+
+
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
 //https://alligator.io/vuejs/lodash-throttle-debounce/
+//https://github.com/RubaXa/Sortable#cdn
