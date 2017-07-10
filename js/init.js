@@ -39,8 +39,17 @@
   animation: 200,
   group: {
     name: "shared",
-    pull: "clone",
-    revertClone: true,
+    pull: false,
+    put: false 
+  },
+  sort: true
+});
+ Sortable.create(sortable2, {
+  animation: 200,
+  group: {
+    name: "shared",
+    pull: false, 
+    put: false
   },
   sort: true
 });
