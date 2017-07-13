@@ -11,6 +11,7 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
+
 </head>
 <!-- end of head -->
 
@@ -1031,10 +1032,15 @@
 
                                 <div class="row">
 
-                                    <p style="padding-left:10px;">
+                                    <div class="input-field col s4" style="padding-left:10px;">
                                         <input type="checkbox" id="totallossindicator" />
                                         <label for="totallossindicator">Activate Total Loss Fields?</label>
-                                    </p>
+                                    </div>
+
+                                    <div class="input-field col s4" style="padding-left:10px;">
+                                        <input type="checkbox" id="borderlinetl" />
+                                        <label for="borderlinetl">Borderline Total Loss?</label>
+                                    </div>
                                 </div>
 
                                 <div class="row">
@@ -1230,12 +1236,12 @@
                                             <label for="repaircost">Estimated Repair Cost</label>
                                         </div>
                                         <div class="col s3" style="margin-top:20px;">
-                                        <input type="checkbox" id="driveable" />
-                                        <label for="driveable">Is the vehicle drivable?</label>
+                                            <input type="checkbox" id="driveable" />
+                                            <label for="driveable">Is the vehicle drivable?</label>
                                         </div>
                                         <div class="col s3" style="margin-top:20px;">
-                                        <input type="checkbox" id="soc" />
-                                        <label for="soc">Shop of owners choice?</label>
+                                            <input type="checkbox" id="soc" />
+                                            <label for="soc">Shop of owners choice?</label>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -1244,12 +1250,12 @@
                                             <label for="bettermentsummary">Betterment</label>
                                         </div>
                                         <div class="col s3" style="margin-top:20px;">
-                                        <input type="checkbox" id="shopcopy" />
-                                        <label for="shopcopy">Copy of estimate sent to shop?</label>
+                                            <input type="checkbox" id="shopcopy" />
+                                            <label for="shopcopy">Copy of estimate sent to shop?</label>
                                         </div>
                                         <div class="col s3" style="margin-top:20px;">
-                                        <input type="checkbox" id="ownercopy" />
-                                        <label for="ownercopy">Copy of Estimate sent to Owner?</label>
+                                            <input type="checkbox" id="ownercopy" />
+                                            <label for="ownercopy">Copy of Estimate sent to Owner?</label>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -1276,7 +1282,7 @@
                                             <label for="daystorepair">Days to Repair</label>
                                         </div>
                                     </div>
-                                     <div class="row">
+                                    <div class="row">
                                         <div class="input-field col s4">
                                             <input id="percentagenada" placeholder="XX%" type="text" class="">
                                             <label for="percentagenada">Percent of Nada</label>
@@ -1289,7 +1295,58 @@
                                     <h4 class="skinny" style="padding:10px;">Total Loss Vehicle Report</h4>
                                 </div>
 
+                                <br />
 
+                                <div class="row">
+                                    <div class="input-field col s4">
+                                        <select>
+                                        <option value="" disabled selected>Select One</option>
+                                        <option value="1">Good</option>
+                                        <option value="2">Fair</option>
+                                        <option value="3">Poor</option>
+                                    </select>
+                                        <label>Overall Condition (Prior to loss)</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <select>
+                                        <option value="" disabled selected>Select One</option>
+                                        <option value="1">ADP</option>
+                                        <option value="2">CCC</option>
+                                        <option value="3">Mitchell</option>
+                                        <option value="3">Other</option>
+
+                                    </select>
+                                        <label>Total Loss Valuation Entity</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s4">
+                                        <input id="requestnumber" type="text" class="">
+                                        <label for="requestnumber">Request Number</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <textarea id="otherinfo" class="materialize-textarea"></textarea>
+                                        <label for="otherinfo">Other Information</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                         <div class="input-field col s2">
+                                            <input id="retail-value" placeholder="0.00" type="text" class="">
+                                            <label for="retail-value">Retail Market Value</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                         <div class="input-field col s2">
+                                            <input id="less-damages" placeholder="0.00" type="text" class="">
+                                            <label for="less-damages">Less Old Damages</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s2">
+                                            <input id="actual-value" placeholder="0.00" type="text" class="">
+                                            <label for="actual-value">Actual Cash Value</label>
+                                        </div>
+                                    </div>
 
 
                             </div>
@@ -1300,12 +1357,12 @@
                 </div>
                 <!-- end of report tab -->
                 <div id="suppreport" class="col s12">Test 4</div>
-            <div id="invoice" class="col s12">Test 3</div>
+                <div id="invoice" class="col s12">Test 3</div>
             </div>
             <!-- end of ALL TABS ROW -->
 
 
-            
+
         </div>
 
     </div>
