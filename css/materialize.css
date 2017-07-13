@@ -2162,7 +2162,7 @@ html {
  */
 body {
   margin: 0;
-  background-color: #e2e2e2;
+  background-color: #efeeee;
   
 
    
@@ -5961,6 +5961,7 @@ textarea.materialize-textarea {
   box-shadow: none;
   box-sizing: content-box;
   transition: all 0.3s;
+      background-color: #f1f1f1;
 }
 
 input:not([type]):disabled, input:not([type])[readonly="readonly"],
@@ -6230,7 +6231,7 @@ textarea.materialize-textarea + label:after {
 }
 
 .input-field.col label {
-  left: 0.75rem;
+  left: 1.5rem;
 }
 
 .input-field.col .prefix ~ label,
@@ -6943,9 +6944,7 @@ select:disabled {
 }
 
 .file-field .btn, .file-field .btn-large {
-  float: left;
-  height: 3rem;
-  line-height: 3rem;
+  
 }
 
 .file-field span {

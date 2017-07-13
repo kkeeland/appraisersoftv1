@@ -144,4 +144,6 @@ a.circle {
     -o-transition: border .2s ease-in-out;
     transition: border .2s ease-in-out;
 }
-  
+#hide-margin-bottom .row {
+  margin-bottom:0px;
+}

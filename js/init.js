@@ -11,11 +11,11 @@
     selectYears: 15 // Creates a dropdown of 15 years to control year
   });
    $('.collapsible').collapsible();
-   $('input.autocomplete, input.shopname').autocomplete({
+  $('input.shopname').autocomplete({
     data: {
-      "Susan Dahlquist": null,
-      "Jedediah Dalton": null,
-      "Some Guy": null
+      "Leifs": null,
+      "Elite Collision": null,
+      "ABC Auto Body": null
     },
     limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
     onAutocomplete: function(val) {
@@ -23,11 +23,11 @@
     },
     minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
   });
-  $('input.shopname').autocomplete({
+  $('input.partsprovider').autocomplete({
     data: {
-      "Leifs": null,
-      "Elite Collision": null,
-      "ABC Auto Body": null
+      "LKQ - 1-800-232-1111": null,
+      "Example Parts 2": null,
+      "Local Parts Guy": null
     },
     limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
     onAutocomplete: function(val) {
@@ -56,8 +56,10 @@
 
 
 
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
 //https://alligator.io/vuejs/lodash-throttle-debounce/
 //https://github.com/RubaXa/Sortable#cdn
+//https://github.com/David-Desmaisons/draggable-example/blob/master/src/components/Hello.vue
