@@ -4975,13 +4975,14 @@ small {
 
 .tabs {
   position: relative;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
   height: 48px;
   width: 100%;
   background-color: #fff;
   margin: 0 auto;
   white-space: nowrap;
+  
 }
 
 .tabs.tabs-transparent {
