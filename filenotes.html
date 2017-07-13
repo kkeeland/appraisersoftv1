@@ -25,7 +25,7 @@
                 <div class="nav-wrapper white">
                     <form>
                         <div class="input-field searchbar">
-                            <input id="search" type="search" placeholder="find index number or claim number" required style="padding-top:10px;text-transform:uppercase">
+                            <input id="search" type="search" placeholder="find index number or claim number" required style="padding-top:10px;text-transform:uppercase;background:none;">
                             <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
                             <i class="material-icons">close</i>
                         </div>
@@ -66,7 +66,7 @@
                     <img class="circle" src="img/terry.png" height="">
                 </div>
 
-                <h5 class="center white-text loggedin-user">Brendan Shields</h5>
+                <h4 class="center white-text loggedin-user" style="font-style: italic;">Terry Earl</h4>
                 <h6 class="center white-text">Owner - Tucson, AZ</h6>
             </div>
             <li><a class="white-text skinny" href="index.html"><i class="material-icons white-text" style="font-size:25px;">dashboard</i>Dashboard</a></li>
@@ -169,7 +169,7 @@
                     <!-- Dropdown Structure -->
                     <ul id='dropdown4' class='dropdown-content'>
                         <li><a href="#!">Insurance Guidelines</a></li>
-                        <li><a href="#!">Email Adjuster</a></li>
+                        <li><a href='#modal4'>Email Adjuster</a></li>
                         <li><a href="#!">Email Appraiser</a></li>
 
                     </ul>
@@ -182,6 +182,7 @@
                         <li><a href="#!">Scheduled</a></li>
                         <li><a href="#!">Inspected</a></li>
                         <li><a href="#!">Billed</a></li>
+                        <li><a href="#!">Active Supplement</a></li>
                         <li><a href="#!">Overdue</a></li>
                         <li><a href="#!">Paid</a></li>
                         <li><a href="#!">Cancelled</a></li>
@@ -230,8 +231,8 @@
 
                                     <a class='waves-effect btn iasred' style="" href='#modal1'><i class="material-icons white-text left">notifications_on</i>Edit Reminder</a>
                                     <a class='waves-effect btn iasred' style="" href='#modal1'><i class="material-icons white-text left">notifications_on</i>Disable Reminder</a>
-                                     <br />
-                                     <hr>
+                                    <br />
+                                    <hr>
                                     <span style="font-weight:bold;">Reminder Set for: July 5th, 2017 - 10:00AM</span>
                                 </div>
                             </li>
@@ -248,7 +249,8 @@
 
                             </li>
                             <li>
-                                <div class="collapsible-header"><span class="new badge blue" data-badge-caption="Public"></span><i class="material-icons">description</i>New Appointment Set - July 5th, 2017 - 1:00PM</div>
+                                <div class="collapsible-header"><span class="new badge blue" data-badge-caption="Public"></span><i class="material-icons">description</i>New
+                                    Appointment Set - July 5th, 2017 - 1:00PM</div>
                                 <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span>
                                     <br />
                                     <br />
@@ -287,38 +289,21 @@
         <div class="modal-content">
             <!-- Calentim - Date Time Range Picker Here -->
             <div class="row">
-                <div class="col s12 ">
-                    <h4 class="skinny center">Create a Reminder</h4>
-                    <div class="input-field col s12">
-                        <form action="#">
-                            <p class="col s6">
-
-                                <input id="reminder_subject" type="text" class="">
-                                <label for="note_subject">Reminder Subject:</label>
-                            </p>
-                        </form>
-                    </div>
-                    <div class="input-field col s12">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Reminder Note:</label>
-                    </div>
-
-
-                    <div class="input-field col s12">
-                        <form action="#">
-                            <p class="col s3">
-
-                                <input placeholder="Hours" id="hours" type="text" class="validate">
-                                <label for="first_name">When to remind you, in hours:</label>
-                            </p>
-
-                        </form>
-
-
-                    </div>
-                    <div class="row"></div>
+                <h4 class="skinny center">Create a Reminder</h4>
+                <div class="input-field col s6">
+                    <input id="reminder_subject" type="text" class="">
+                    <label for="reminder_subject">Reminder Subject:</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Reminder Note:</label>
+                </div>
+                <div class="input-field col s4">
+                    <input id="hours" type="text" class="validate">
+                    <label for="hours">When to remind you, in hours:</label>
                 </div>
             </div>
+            <div class="row"></div>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Create Reminder</a>
@@ -330,33 +315,23 @@
         <div class="modal-content">
             <!-- Calentim - Date Time Range Picker Here -->
             <div class="row">
-                <div class="col s12 ">
-                    <h4 class="skinny center">Create a File Note</h4>
-                    <div class="input-field col s12">
-                        <form action="#">
-                            <p class="col s6">
-                                <input id="note_subject" type="text" class="">
-                                <label for="note_subject">Note Subject:</label>
-                            </p>
-                        </form>
-                        <div class="input-field col s5 tooltipped" data-position="top" data-delay="50" data-tooltip="Private Notes will not print if notes are printed for clients.">
-                            <select>
+                <h4 class="skinny center">Create a File Note</h4>
+                <div class="input-field col s6">
+                    <input id="note_subject" type="text" class="">
+                    <label for="note_subject">Note Subject:</label>
+                </div>
+                <div class="input-field col s5 tooltipped" data-position="top" data-delay="50" data-tooltip="Private Notes will not print if notes are printed for clients.">
+                    <select>
                             <option value="" disabled selected>Private or Public</option>
                             <option value="1">Private</option>
                             <option value="2">Public</option>
                             </select>
-                        </div>
-                    </div>
-
-                    <div class="input-field col s12">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">File Note:</label>
-                    </div>
-
-
-
-                    <div class="row"></div>
                 </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">File Note:</label>
+                </div>
+                <div class="row"></div>
             </div>
         </div>
         <div class="modal-footer">
@@ -364,6 +339,31 @@
         </div>
     </div>
 
+
+    <!-- MODALS FOR COMPOSE EMAIL -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <h4 class="skinny center">Compose an Email</h4>
+                <div class="input-field col s6">
+                    <input id="email_to" type="text" class="">
+                    <label for="email_to">To:</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="email_subject" type="text" class="">
+                    <label for="email_subject">Email Subject:</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Email Body:</label>
+                </div>
+            </div>
+            <div class="row"></div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Send Email</a>
+        </div>
+    </div>
 
     </div>
     <!-- entire page container End  -->

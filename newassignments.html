@@ -42,14 +42,10 @@
                 <a class='dropdown-button waves-effect btn iasred right' href='#' data-activates='dropdown3'><i class="material-icons white-text left">perm_identity</i>My Account</a>
                 <!-- Dropdown Structure -->
                 <ul id='dropdown3' class='dropdown-content'>
-                    <li><a href="#!">New Assignments</a></li>
+                    <li><a href="#!">My Profile</a></li>
                     <li class="divider"></li>
-                    <li><a href="#!">Scheduled</a></li>
-                    <li><a href="#!">Inspected</a></li>
-                    <li><a href="#!">Billed</a></li>
-                    <li><a href="#!">Overdue</a></li>
-                    <li><a href="#!">Paid</a></li>
-                    <li><a href="#!">Cancelled</a></li>
+                    <li><a href="#!">Request Help</a></li>
+                    <li><a href="#!">Sign Out</a></li>
                 </ul>
             </div>
         </div>
@@ -170,7 +166,7 @@
                     <!-- Dropdown Structure -->
                     <ul id='dropdown4' class='dropdown-content'>
                         <li><a href="#!">Insurance Guidelines</a></li>
-                        <li><a href="#!">Email Adjuster</a></li>
+                        <li><a href='#modal4'>Email Adjuster</a></li>
                         <li><a href="#!">Email Appraiser</a></li>
 
                     </ul>
@@ -183,6 +179,7 @@
                         <li><a href="#!">Scheduled</a></li>
                         <li><a href="#!">Inspected</a></li>
                         <li><a href="#!">Billed</a></li>
+                        <li><a href="#!">Active Supplement</a></li>
                         <li><a href="#!">Overdue</a></li>
                         <li><a href="#!">Paid</a></li>
                         <li><a href="#!">Cancelled</a></li>
@@ -1330,23 +1327,110 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                         <div class="input-field col s2">
-                                            <input id="retail-value" placeholder="0.00" type="text" class="">
-                                            <label for="retail-value">Retail Market Value</label>
-                                        </div>
+                                    <div class="input-field col s5">
+                                        <input id="retail-value" placeholder="0.00" type="text" class="">
+                                        <label for="retail-value">Retail Market Value</label>
                                     </div>
-                                    <div class="row">
-                                         <div class="input-field col s2">
-                                            <input id="less-damages" placeholder="0.00" type="text" class="">
-                                            <label for="less-damages">Less Old Damages</label>
-                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s5">
+                                        <input id="less-damages" placeholder="0.00" type="text" class="">
+                                        <label for="less-damages">Less Old Damages</label>
                                     </div>
-                                    <div class="row">
-                                        <div class="input-field col s2">
-                                            <input id="actual-value" placeholder="0.00" type="text" class="">
-                                            <label for="actual-value">Actual Cash Value</label>
-                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s5">
+                                        <input id="actual-value" placeholder="0.00" type="text" class="">
+                                        <label for="actual-value">Actual Cash Value</label>
                                     </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s2">
+                                        <input id="salestaxperc" type="text" class="">
+                                        <label for="salestaxperc">Sales Tax %</label>
+                                    </div>
+                                    <div class="input-field col s3">
+                                        <input id="total-salestax" placeholder="0.00" type="text" class="">
+                                        <label for="total-salestax">Total Sales Tax</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s5">
+                                        <input id="settlement-value" placeholder="0.00" type="text" class="">
+                                        <label for="settlement-value">Settlement Value</label>
+                                    </div>
+                                </div>
+
+                                <div class="card-head">
+                                    <h4 class="skinny" style="padding:10px;">Salvage Bids</h4>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="input-field col s4">
+                                        <select>
+                                        <option value="" disabled selected>Select One</option>
+                                        <option value="1">IAA - 1-800-123-4567</option>
+                                        <option value="2">Bidfast</option>
+                                        <option value="3">Copart</option>
+                                    </select>
+                                        <label>Buyer</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input id="bid-value" placeholder="0.00" type="text" class="">
+                                        <label for="bid-value">Bid</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s4">
+                                        <select>
+                                        <option value="" disabled selected>Select One</option>
+                                        <option value="1">IAA - 1-800-123-4567</option>
+                                        <option value="2">Bidfast</option>
+                                        <option value="3">Copart</option>
+                                    </select>
+                                        <label>Buyer</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input id="bid-value" placeholder="0.00" type="text" class="">
+                                        <label for="bid-value">Bid</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s4">
+                                        <select>
+                                        <option value="" disabled selected>Select One</option>
+                                        <option value="1">IAA - 1-800-123-4567</option>
+                                        <option value="2">Bidfast</option>
+                                        <option value="3">Copart</option>
+                                    </select>
+                                        <label>Buyer</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input id="bid-value" placeholder="0.00" type="text" class="">
+                                        <label for="bid-value">Bid</label>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row" style="padding-top:15px;">
+                                    <div class="input-field col s4">
+                                        <select>
+                                        <option value="" disabled selected>Select One</option>
+                                        <option value="1">IAA - 1-800-123-4567</option>
+                                        <option value="2">Bidfast</option>
+                                        <option value="3">Copart</option>
+                                    </select>
+                                        <label>Salvage Pool</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input id="stall-number" type="text" class="">
+                                        <label for="stall-number">Stall Number</label>
+                                    </div>
+                                    <div class="input-field col s4" style="padding-left:10px;">
+                                        <input type="checkbox" id="permission" />
+                                        <label for="permission">Permission</label>
+                                    </div>
+                                </div>
 
 
                             </div>
@@ -1385,38 +1469,21 @@
         <div class="modal-content">
             <!-- Calentim - Date Time Range Picker Here -->
             <div class="row">
-                <div class="col s12 ">
-                    <h4 class="skinny center">Create a Reminder</h4>
-                    <div class="input-field col s12">
-                        <form action="#">
-                            <p class="col s6">
-
-                                <input id="reminder_subject" type="text" class="">
-                                <label for="note_subject">Reminder Subject:</label>
-                            </p>
-                        </form>
-                    </div>
-                    <div class="input-field col s12">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Reminder Note:</label>
-                    </div>
-
-
-                    <div class="input-field col s12">
-                        <form action="#">
-                            <p class="col s3">
-
-                                <input placeholder="Hours" id="hours" type="text" class="validate">
-                                <label for="first_name">When to remind you, in hours:</label>
-                            </p>
-
-                        </form>
-
-
-                    </div>
-                    <div class="row"></div>
+                <h4 class="skinny center">Create a Reminder</h4>
+                <div class="input-field col s6">
+                    <input id="reminder_subject" type="text" class="">
+                    <label for="reminder_subject">Reminder Subject:</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Reminder Note:</label>
+                </div>
+                <div class="input-field col s4">
+                    <input id="hours" type="text" class="validate">
+                    <label for="hours">When to remind you, in hours:</label>
                 </div>
             </div>
+            <div class="row"></div>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Create Reminder</a>
@@ -1428,33 +1495,23 @@
         <div class="modal-content">
             <!-- Calentim - Date Time Range Picker Here -->
             <div class="row">
-                <div class="col s12 ">
-                    <h4 class="skinny center">Create a File Note</h4>
-                    <div class="input-field col s12">
-                        <form action="#">
-                            <p class="col s6">
-                                <input id="note_subject" type="text" class="">
-                                <label for="note_subject">Note Subject:</label>
-                            </p>
-                        </form>
-                        <div class="input-field col s5 tooltipped" data-position="top" data-delay="50" data-tooltip="Private Notes will not print if notes are printed for clients.">
-                            <select>
+                <h4 class="skinny center">Create a File Note</h4>
+                <div class="input-field col s6">
+                    <input id="note_subject" type="text" class="">
+                    <label for="note_subject">Note Subject:</label>
+                </div>
+                <div class="input-field col s5 tooltipped" data-position="top" data-delay="50" data-tooltip="Private Notes will not print if notes are printed for clients.">
+                    <select>
                             <option value="" disabled selected>Private or Public</option>
                             <option value="1">Private</option>
                             <option value="2">Public</option>
                             </select>
-                        </div>
-                    </div>
-
-                    <div class="input-field col s12">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">File Note:</label>
-                    </div>
-
-
-
-                    <div class="row"></div>
                 </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">File Note:</label>
+                </div>
+                <div class="row"></div>
             </div>
         </div>
         <div class="modal-footer">
@@ -1480,7 +1537,30 @@
         </div>
     </div>
 
-
+    <!-- MODALS FOR COMPOSE EMAIL -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <h4 class="skinny center">Compose an Email</h4>
+                <div class="input-field col s6">
+                    <input id="email_to" type="text" class="">
+                    <label for="email_to">To:</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="email_subject" type="text" class="">
+                    <label for="email_subject">Email Subject:</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Email Body:</label>
+                </div>
+            </div>
+            <div class="row"></div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Send Email</a>
+        </div>
+    </div>
 
 
     </div>
