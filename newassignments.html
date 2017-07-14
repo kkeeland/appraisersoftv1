@@ -303,8 +303,8 @@
                                             <input id="policynumber" type="text" class="">
                                             <label for="policynumber">Policy Number</label>
                                         </div>
-                                        <div class="col s4">
-                                            <a class='waves-effect btn iasred valign ' style="" href='#modal3'>Check for Duplicate Policy</a>
+                                        <div class="col s4 input-field">
+                                            <a class='waves-effect btn iasred' style="" href='#modal3'>Check for Duplicate Policy</a>
                                         </div>
 
                                     </div>
@@ -588,9 +588,9 @@
                             <div class="row">
                                 <div class="input-field col s5">
                                     <input id="vin" type="text" class="">
-                                    <label for="vin">Vin Number</label>
+                                    <label for="vin">VIN Number</label>
                                 </div>
-                                <div class="col s4">
+                                <div class="col s4 input-field">
                                     <a class='waves-effect btn iasred' style="" href='#modal3'>Check for Duplicate VIN</a>
                                 </div>
 
@@ -637,7 +637,7 @@
                                     <label for="shop_name">Shop Name</label>
                                 </div>
                                 <div class="col s3">
-                                    <a class='waves-effect btn iasred valign ' style="" href='#'>Add New Shop</a>
+                                    <a class='waves-effect btn iasred valign ' style="" href='#shopmodal'>Add New Shop</a>
                                 </div>
                                 <div class="input-field col s4">
                                     <input id="shop_phone" type="text" class="">
@@ -1460,8 +1460,8 @@
                             </div>
                             <div class="row">
                                 <div class="input-field col s3">
-                                    <input type="date" id="date_inspected" class="datepicker">
-                                    <label for="date_inspected">Date of Supplement</label>
+                                    <input type="date" id="suppdate" class="datepicker">
+                                    <label for="suppdate">Date of Supplement</label>
                                 </div>
                             </div>
                             <div class="row">
@@ -1499,11 +1499,11 @@
                                     <br />
 
                                     <input type="checkbox" id="supp10" />
-                                    <label for="supp8">Preliminary estimate, no invoices available.</label>
+                                    <label for="supp10">Preliminary estimate, no invoices available.</label>
                                     <br />
 
                                     <input type="checkbox" id="supp11" />
-                                    <label for="supp9"><b>Vehicle released to owner, please pay shop direct.</b></label>
+                                    <label for="supp11"><b>Vehicle released to owner, please pay shop direct.</b></label>
                                     <br />
                                 </div>
                             </div>
@@ -1515,7 +1515,7 @@
                                 <label for="textarea5">Appraiser Remarks</label>
                             </div>
                             <div class="input-field col s12">
-                                <h3>Supplement Total</h3>
+                                <h5>Supplement Total</h5>
                             </div>
                             <div class="input-field col s4">
                                 <input id="supptotal" placeholder="0.00" type="text" class="">
@@ -1528,10 +1528,115 @@
                         </div>
                     </div>
                 </div>
+                <div id="invoice" class="col s12">
+                    <div class="row" style="background-color:white;">
+                        <div class="col s12" style="padding:30px;">
+                            <div class="row">
+                                <div class="left"> <a class='waves-effect btn iasred' style="" href='#'><i class="material-icons white-text left">print</i>Print Current Invoice</a>
+                                </div>
+                                <div class="right">
+                                    <a class='dropdown-button waves-effect btn iasred' style="" href='#' data-activates='printdropdown1'><i class="material-icons white-text left">subject</i>Create New Invoice/View Invoice</a>
+                                    <!-- ezPrintJS for Print Request -->
+                                    <ul id='printdropdown1' class='dropdown-content'>
+                                        <li><a href="#!">Invoice 1</a></li>
+                                        <li><a href="#!">Invoice 2</a></li>
+                                        <li><a href="#!">Invoice 3</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#!">New Invoice</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-head">
+                                <h4 class="skinny" style="padding:10px;">Invoice 1</h4>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s4">
+                                    <input type="date" id="dateinvoiced" class="datepicker">
+                                    <label for="dateinvoiced">Date of Invoice</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s5">
+                                    <select multiple>
+                                                    <option value="" disabled selected>Predefined Services</option>
+                                                    <option value="1">Total Loss Report</option>
+                                                    <option value="2">Repairable Report</option>
+                                                    <option value="3">Option 3</option>
+                                                    <option value="3">Option 4</option>
+
+                                    </select>
+                                </div>
+                                <div class="input-field col s5">
+                                    <a class="btn iasred input-field" href="#">Add New Predefined Service</a>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s4">
+                                    <input type="text" id="attention" class="">
+                                    <label for="attention">Attention Line</label>
+                                </div>
+                                <a class="btn iasred input-field" href="#">Insert Adjuster Name</a>
+
+                                <div class="input-field col s12">
+                                    <textarea id="otherinvoice" class="materialize-textarea"></textarea>
+                                    <label for="otherinvoice">Other Information - Prints to Invoice</label>
+                                </div>
+                            </div>
+
+
+                            <div class="card-head">
+                                <h4 class="skinny" style="padding:10px;">Invoice Fees</h4>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s3">
+                                    <input id="servicefee" placeholder="0.00" type="text" class="">
+                                    <label for="servicefee">Service Fee</label>
+                                </div>
+                                <div class="input-field col s3">
+                                    <input id="timeexpense" placeholder="0.00" type="text" class="">
+                                    <label for="timeexpense">Time & Expense</label>
+                                </div>
+                                <div class="input-field col s3 tooltipped" data-position="top" data-delay="50" data-tooltip="Not calculated in Appraisers Earnings.">
+                                    <input id="othercost" placeholder="0.00" type="text" class="">
+                                    <label for="othercost">Other Cost</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s3">
+                                    <input id="mileagecost" placeholder="0.00" type="text" class="">
+                                    <label for="mileagecost">Mileage</label>
+                                </div>
+                                <div class="col s5 tooltipped" data-position="top" data-delay="50" data-tooltip="Calculated using the insurance profiles milage rate in their settings page.">
+                                    <a class="btn iasred input-field" href="#mileagemodal">Calculate Mileage</a>
+                                </div>
+                            </div>
+                            <div class="input-field col s12">
+                                <h5>Invoice Total</h5>
+                            </div>
+                            <div class="input-field col s4">
+                                <input id="invoicetotal" placeholder="0.00" type="text" class="">
+                                <label for="invoicetotal"></label>
+                            </div>
+                              <div class="input-field col s4" style="padding-left:10px;">
+                                    <input type="checkbox" id="readyforbill" />
+                                    <label for="readyforbill">Ready for Billing?</label>
+                                </div>
+
+                                <div class="input-field col s4 " style="padding-left:10px;">
+                                    <input type="checkbox" id="paid" />
+                                    <label for="paid">Invoice Paid</label>
+                                </div>
 
 
 
-                <div id="invoice" class="col s12">Test 3</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
             <!-- end of ALL TABS ROW -->
 
@@ -1649,6 +1754,30 @@
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Send Email</a>
+        </div>
+    </div>
+
+    <!-- MODALS FOR MILEAGE -->
+    <div id="mileagemodal" class="modal">
+        <div class="modal-content">
+            <!-- Calentim - Date Time Range Picker Here -->
+            <div class="row">
+                <h4 class="skinny center">Enter number of Miles</h4>
+                <div class="col s12 center">
+                    <small class="center">Miles will be calculated using the settings in the insurance companies profile.</small>
+                    <h6>Current Mile Rate: $1.00</h6>
+                    <div class="input-field col s5"></div>
+                    <div class="input-field col s2">
+                        <input id="miles" type="text" class="validate">
+                        <label for="miles">Total Miles</label>
+                    </div>
+                    <div class="input-field col s5"></div>
+                </div>
+            </div>
+            <div class="row"></div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Calculate Mileage</a>
         </div>
     </div>
 
