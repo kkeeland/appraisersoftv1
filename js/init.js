@@ -35,6 +35,19 @@
     },
     minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
   });
+  $('input.adjusterslist').autocomplete({
+    data: {
+      "Susan Dahlquist": null,
+      "Ryanne Morea": null,
+      "Kim Tally": null, 
+      "Alley Wander": null
+    },
+    limit: 20, // The max amount of results that can be shown at once. Default: Infinity.
+    onAutocomplete: function(val) {
+      // Callback function when value is autcompleted.
+    },
+    minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
+  });
   Sortable.create(sortable, {
   animation: 200,
   group: {
