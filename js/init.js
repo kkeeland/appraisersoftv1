@@ -69,7 +69,6 @@
 
 
 
-
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
@@ -77,3 +76,5 @@
 //https://github.com/RubaXa/Sortable#cdn
 //https://github.com/David-Desmaisons/draggable-example/blob/master/src/components/Hello.vue
 //https://pdfobject.com/
+
+//http://jquery.malsup.com/media/misc.html
