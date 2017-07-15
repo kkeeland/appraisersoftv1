@@ -38,13 +38,13 @@
       <div class="usermenu">
         <a class="waves-effect btn iasred right" href="#"><i class="material-icons white-text ">settings</i></a>
         <a class='dropdown-button waves-effect btn iasred right' href='#' data-activates='dropdown3'><i class="material-icons white-text left">perm_identity</i>My Account</a>
-         <!-- Dropdown Structure -->
-                <ul id='dropdown3' class='dropdown-content'>
-                    <li><a href="#!">My Profile</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#!">Request Help</a></li>
-                    <li><a href="#!">Sign Out</a></li>
-                </ul>
+        <!-- Dropdown Structure -->
+        <ul id='dropdown3' class='dropdown-content'>
+          <li><a href="#!">My Profile</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Request Help</a></li>
+          <li><a href="#!">Sign Out</a></li>
+        </ul>
       </div>
     </div>
 
@@ -59,10 +59,10 @@
     <ul id="slide-out" class="side-nav fixed iasred">
       <div class="logocorner">
         <div class="logoleft center"><img height="90px" src="http://www.iasclaimsgroup.com/wp-content/uploads/2013/10/logo.png">
-        <br />
-        <img class="circle" src="img/terry.png" height="">
+          <br />
+          <img class="circle" src="img/terry.png" height="">
         </div>
-        
+
         <h4 class="center white-text loggedin-user">Terry Earl</h4>
         <h6 class="center white-text">Owner - Tucson, AZ</h6>
       </div>
@@ -76,7 +76,7 @@
             <div class="collapsible-body">
               <ul>
                 <li><a class="skinny" href="#!">View/Add Insurance Profile</a></li>
-                <li><a class="skinny" href="#!">View/Add Appraiser</a></li>
+                <li><a class="skinny" href="appraisers.html">View/Add Appraiser</a></li>
                 <li><a class="skinny" href="shops.html">View/Add Shop</a></li>
               </ul>
             </div>
@@ -122,99 +122,82 @@
             <td>Portland, OR</td>
             <td>Appraiser, Invoices</td>
             <td>503-999-1232</td>
-             <td>$15,000</td>
+            <td>$15,000</td>
             <td><a href="#appraisermodal">Edit</a></td>
           </tr>
-        <tr class="">
+          <tr class="">
             <td>Mac Dre</td>
             <td>Portland, OR</td>
             <td>Appraiser, Invoices, Admin</td>
             <td>503-999-1232</td>
-             <td>$15,000</td>
+            <td>$15,000</td>
             <td><a href="#appraisermodal">Edit</a></td>
           </tr>
-         <tr class="">
+          <tr class="">
             <td>Frank Miley</td>
             <td>Salem, OR</td>
             <td>Appraiser, Invoices</td>
             <td>503-111-5555</td>
-             <td>$5,000</td>
+            <td>$5,000</td>
             <td><a href="#appraisermodal">Edit</a></td>
           </tr>
-        <tr class="">
+          <tr class="">
             <td>Nick Anderson</td>
             <td>Portland, OR</td>
             <td>Appraiser</td>
             <td>503-111-1111</td>
-             <td>$15,000</td>
+            <td>$15,000</td>
             <td><a href="#appraisermodal">Edit</a></td>
           </tr>
-      
-         
+
+
           </tbody>
         </table>
       </div>
-      <!-- pagination start  -->
-      <div class="row">
-        <div class="col s12 center">
-          <ul class="pagination">
-            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-            <li class="active"><a href="#!">1</a></li>
-            <li class="waves-effect"><a href="#!">2</a></li>
-            <li class="waves-effect"><a href="#!">3</a></li>
-            <li class="waves-effect"><a href="#!">4</a></li>
-            <li class="waves-effect"><a href="#!">5</a></li>
-            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- pagination end  -->
       <!-- Dashboard Table End  -->
 
 
     </div>
     <!-- main-content-area End  -->
 
-
-
-
-
-
-
     <!-- SHOP MODAL ENTER NEW SHOP -->
-    <div id="shopmodal" class="modal">
-        <div class="modal-content">
-            <div class="row">
-                <h4 class="skinny center">Enter New Shop</h4>
-                <div class="input-field col s5">
-                    <input type="text" id="shop_name_modal" class="shopname">
-                    <label for="shop_name_modal">Shop Name</label>
-                </div>
-                <div class="input-field col s5">
-                    <input id="shop_phone_modal" type="text" class="">
-                    <label for="shop_phone_modal">Work Phone</label>
-                </div>
-            </div>
+    <div id="appraisermodal" class="modal">
+      <div class="modal-content">
+        <div class="row">
+          <div class="input-field col s4">
+            <input id="ins_name" type="text" class="">
+            <label for="ins_name">Appraisers Name</label>
 
-            <div class="row">
-                <div class="input-field col s10">
-                    <input id="shop_add_modal" type="text" class="">
-                    <label for="shop_add_modal">Address</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="ins_work_phone" type="text" class="">
+            <label for="ins_work_phone">Work Phone</label>
+          </div>
 
-                </div>
-                <div class="input-field col s2">
-                    <input id="shop_suite_modal" type="text" class="">
-                    <label for="shop_suite_modal">Suite/Apt.</label>
-                </div>
-            </div>
+          <div class="input-field col s4">
+            <input id="ins_home_phone" type="text" class="">
+            <label for="ins_home_phone">Home Phone</label>
+          </div>
+        </div>
 
-            <div class="row">
-                <div class="input-field col s4">
-                    <input id="shop_city_modal" type="text" class="">
-                    <label for="shop_city_modal">City</label>
-                </div>
-                <div class="input-field col s4">
-                    <select>
+        <div class="row">
+          <div class="input-field col s5">
+            <input id="ins_add" type="text" class="">
+            <label for="ins_add">Address</label>
+
+          </div>
+          <div class="input-field col s2">
+            <input id="ins_suite" type="text" class="">
+            <label for="ins_suite">Suite/Apt.</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s3">
+            <input id="ins_city" type="text" class="">
+            <label for="ins_city">City</label>
+          </div>
+          <div class="input-field col s2">
+            <select>
                                                 <option value="" disabled selected>State</option>
                                                 <option value="AL">Alabama</option>
                                                 <option value="AK">Alaska</option>
@@ -268,27 +251,70 @@
                                                 <option value="WI">Wisconsin</option>
                                                 <option value="WY">Wyoming</option>
                                             </select>
-                </div>
-                <div class="input-field col s3">
-                    <input id="shop_zip_modal" type="text" class="">
-                    <label for="shop_zip_modal">Zip Code</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s5">
-                    <input id="shop_email_modal" type="text" class="">
-                    <label for="shop_email_modal">Shop Email</label>
-                </div>
-                <div class="input-field col s3">
-                    <input id="shop_id" type="text" class="">
-                    <label for="shop_id">Tax ID</label>
-                </div>
-            </div>
-            <!-- end of shop information area -->
+          </div>
+          <div class="input-field col s2">
+            <input id="ins_zip" type="text" class="">
+            <label for="ins_zip">Zip Code</label>
+          </div>
+          <div class="input-field col s4">
+            <input id="ins_email" type="text" class="">
+            <label for="ins_email">Appraisers Email</label>
+          </div>
         </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save New Shop</a>
+
+        <div class="row">
+          <div class="input-field col s3">
+            <input id="ins_email" type="text" class="">
+            <label for="ins_email">Date Hired</label>
+          </div>
+          <div class="input-field col s3">
+            <input id="ins_email" type="text" class="">
+            <label for="ins_email">Salary</label>
+          </div>
+          <div class="input-field col s3">
+            <input id="ins_email" type="text" class="">
+            <label for="ins_email">Billing Rate</label>
+          </div>
         </div>
+
+        <div class="row">
+
+          <div class="input-field col s12">
+            <textarea id="summaryofloss" class="materialize-textarea"></textarea>
+            <label for="summaryofloss">Notes</label>
+          </div>
+
+        </div>
+        <div class="row">
+            <div class="col s6">
+              <div class="file-field input-field">
+                <div class="btn iasred">
+                  <span>Upload User Photo</span>
+                  <input type="file">
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="row">
+          <h5>Access Privileges</h5>
+          <div class="col s12">
+            <input type="checkbox" class="right" id="test5" />
+            <label for="test5" style="margin-right:10px;">Admin</label>
+            <input type="checkbox" class="right" id="test56" />
+            <label for="test56" style="margin-right:10px;">Appraiser</label>
+            <input type="checkbox" class="right" id="test57" />
+            <label for="test57" style="margin-right:10px;">Invoicing</label>
+          </div>
+          
+
+        </div>
+
+
+        <!-- end of shop information area -->
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save Appraiser</a>
+      </div>
     </div>
 
 
