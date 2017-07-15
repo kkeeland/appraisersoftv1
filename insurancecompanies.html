@@ -56,7 +56,7 @@
   <!-- start of main left navigation -->
 
   <div class="page-container">
-    <ul id="slide-out" class="side-nav fixed iasred">
+  <ul id="slide-out" class="side-nav fixed iasred">
       <div class="logocorner">
         <div class="logoleft center"><img height="90px" src="http://www.iasclaimsgroup.com/wp-content/uploads/2013/10/logo.png">
           <br />
@@ -68,7 +68,8 @@
       </div>
       <li><a class="white-text skinny" href="index.html"><i class="material-icons white-text" style="font-size:25px;">dashboard</i>Quick Snapshot</a></li>
       <li><a class="white-text skinny" href="newassignments.html"><i class="material-icons white-text" style="font-size:25px;">assignment_ind</i>New Assignments</a></li>
-      <li><a class="white-text skinny" href="#!"><i class="material-icons white-text" style="font-size:25px;">account_balance</i>Billing Reports</a></li>
+      <li><a class="white-text skinny" href="payments.html"><i class="material-icons white-text" style="font-size:25px;">add_circle</i>New Payments</a></li>
+      <li><a class="white-text skinny" href="reports.html"><i class="material-icons white-text" style="font-size:25px;">account_balance</i>Billing Reports</a></li>
       <li class="">
         <ul class="collapsible collapsible-accordion">
           <li>
@@ -99,7 +100,7 @@
           <a href="#!" class="brand-logo white-text" style="margin-left:20px;"><i class="material-icons white-text">assignment_ind</i>Insurance Profiles </a>
           <ul class="right hide-on-med-and-down">
             <a class="waves-effect btn white black-text" href="#insurancemodal">New Profile</a>
-            <a class="waves-effect btn white black-text" href="#">Reports</a>
+            <a class="waves-effect btn white black-text" href="reports.html">Reports</a>
             <a class="waves-effect btn white black-text" href="#">Print List</a>
           </ul>
         </div>
@@ -116,7 +117,7 @@
               <th>Per Mile Rate</th>
               <th>Contact #</th>
               <th>Custom Header?</th>
-              <th>Edit</th>
+              <th>View/Edit</th>
             </tr>
           </thead>
           <tr class="">
@@ -127,7 +128,7 @@
             <td>$1</td>
             <td>503-252-1322</td>
             <td>YES</td>
-            <td><a href="#insurancemodal">Edit</a></td>
+            <td><a href="#insurancemodal">View</a></td>
           </tr>
           <tr class="">
             <td>Amica</td>
@@ -137,7 +138,7 @@
             <td>$1</td>
             <td>503-252-1322</td>
             <td>YES</td>
-            <td><a href="#insurancemodal">Edit</a></td>
+            <td><a href="#insurancemodal">View</a></td>
           </tr>
           <tr class="">
             <td>Amica</td>
@@ -147,7 +148,7 @@
             <td>$1</td>
             <td>503-252-1322</td>
             <td>YES</td>
-            <td><a href="#insurancemodal">Edit</a></td>
+            <td><a href="#insurancemodal">View</a></td>
           </tr>
           <tr class="">
             <td>Amica</td>
@@ -157,7 +158,7 @@
             <td>$1</td>
             <td>503-252-1322</td>
             <td>YES</td>
-            <td><a href="#insurancemodal">Edit</a></td>
+            <td><a href="#insurancemodal">View</a></td>
           </tr>
           </tbody>
         </table>
@@ -177,9 +178,9 @@
             <label for="ins_name">Insurance Co. Name</label>
 
           </div>
-          <div class="input-field col s4">
+          <div class="input-field col s2">
             <input id="ins_suff" type="text" class="">
-            <label for="ins_suff">Insurance Suffix</label>
+            <label for="ins_suff">Suffix</label>
           </div>
 
         </div>
@@ -297,7 +298,12 @@
             <label for="photos">Supplement Rate</label>
           </div>
         </div>
-
+        <div class="row">
+          <div class="input-field col s3">
+            <input id="tlrate" type="text" class="">
+            <label for="tlrate">Per Mile Rate</label>
+          </div>
+        </div>
         <div class="row">
 
           <div class="input-field col s12">

@@ -40,9 +40,6 @@
         <a class='dropdown-button waves-effect btn iasred right' href='#' data-activates='dropdown3'><i class="material-icons white-text left">perm_identity</i>My Account</a>
          <!-- Dropdown Structure -->
                 <ul id='dropdown3' class='dropdown-content'>
-                    <li><a href="#!">My Profile</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#!">Request Help</a></li>
                     <li><a href="#!">Sign Out</a></li>
                 </ul>
       </div>
@@ -56,7 +53,7 @@
   <!-- start of main left navigation -->
 
   <div class="page-container">
-     <ul id="slide-out" class="side-nav fixed iasred">
+   <ul id="slide-out" class="side-nav fixed iasred">
       <div class="logocorner">
         <div class="logoleft center"><img height="90px" src="http://www.iasclaimsgroup.com/wp-content/uploads/2013/10/logo.png">
           <br />
@@ -68,7 +65,8 @@
       </div>
       <li><a class="white-text skinny" href="index.html"><i class="material-icons white-text" style="font-size:25px;">dashboard</i>Quick Snapshot</a></li>
       <li><a class="white-text skinny" href="newassignments.html"><i class="material-icons white-text" style="font-size:25px;">assignment_ind</i>New Assignments</a></li>
-      <li><a class="white-text skinny" href="#!"><i class="material-icons white-text" style="font-size:25px;">account_balance</i>Billing Reports</a></li>
+      <li><a class="white-text skinny" href="payments.html"><i class="material-icons white-text" style="font-size:25px;">add_circle</i>New Payments</a></li>
+      <li><a class="white-text skinny" href="reports.html"><i class="material-icons white-text" style="font-size:25px;">account_balance</i>Billing Reports</a></li>
       <li class="">
         <ul class="collapsible collapsible-accordion">
           <li>
@@ -92,100 +90,30 @@
 
     <div class="main-content-area" style="padding:30px;padding-top:0px;padding-bottom:0px;">
 
-      <!-- Widgets Start  -->
-      <div class="row">
-        <!-- Widget 1  -->
-        <div class="col l3 m3 s12">
-          <div class="card">
-            <nav>
-              <div class="nav-wrapper iasred">
-                <div class="col s12">
-                  <a class="brand-logo white-text">Total Billed</a><i class="material-icons right">account_balance</i>
-                </div>
-              </div>
-            </nav>
-            <div class="card-content widgets-content">
-              <h3 class="skinny center">$22,000</h3>
-              <h6 class="skinny center">Total Accounts Recievable</h6>
-            </div>
-          </div>
-        </div>
-
-        <!-- Widget 2  -->
-        <div class="col l3 m3 s12">
-          <div class="card">
-            <nav>
-              <div class="nav-wrapper iasred">
-                <div class="col s12">
-                  <a class="brand-logo white-text">Cycle Time</a><i class="material-icons right">loop</i>
-                </div>
-              </div>
-            </nav>
-            <div class="card-content widgets-content">
-              <h3 class="skinny center">2.3</h3>
-              <h6 class="skinny center">Avg. Days to Complete</h6>
-            </div>
-          </div>
-        </div>
-
-        <!-- Widget 3 -->
-        <div class="col l3 m3 s12">
-          <div class="card">
-            <nav>
-              <div class="nav-wrapper iasred">
-                <div class="col s12">
-                  <a class="brand-logo white-text">New Assignments</a><i class="material-icons right">assignment_ind</i>
-                </div>
-              </div>
-            </nav>
-            <div class="card-content widgets-content">
-              <h3 class="skinny center">12</h3>
-              <h6 class="skinny center"> New Assignments</h6>
-            </div>
-          </div>
-        </div>
-
-        <!-- Widget 4  -->
-        <div class="col l3 m3 s12">
-          <div class="card">
-            <nav>
-              <div class="nav-wrapper iasred">
-                <div class="col s12">
-                  <a class="brand-logo white-text">Active Reminders</a><i class="material-icons right">query_builder</i>
-                </div>
-              </div>
-            </nav>
-            <div class="card-content widgets-content">
-              <h3 class="skinny center">10</h3>
-              <h6 class="skinny center">Active file reminders</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Widgets End  -->
+     
 
       <!-- Dashboard Table Start  -->
-
+      <h4 class="center">Report Generator</h4>
       <nav>
         <div class="nav-wrapper iasred">
-          <a href="#!" class="brand-logo white-text" style="margin-left:20px;"><i class="material-icons white-text">assignment_ind</i>Any Status: July 1st, 2017 - July 31st, 2017 </a>
+          <a href="#!" class="brand-logo white-text" style="margin-left:20px;"><i class="material-icons white-text">assignment_ind</i>Dates for Report: July 1st, 2017 - July 31st, 2017 </a>
           <ul class="right hide-on-med-and-down">
-            <li><a class='dropdown-button btn white black-text' href='#' data-activates='dropdown2'>Only show</a>
+            <a class="waves-effect btn white black-text tooltipped" href="#modal1" data-position="bottom" data-delay="50" data-tooltip="Always select a date range first for your report!">Change Dates</a>
+            <li class="right"><a class='dropdown-button btn white black-text' href='#' data-activates='dropdown2'>Generate Report</a>
 
               <!-- Dropdown Structure -->
               <ul id='dropdown2' class='dropdown-content'>
-                <li><a href="#!">Show All</a></li>
-                <li class="divider"></li>
-                <li><a href="#!">New Assignments</a></li>
-                <li><a href="#!">Scheduled</a></li>
-                <li><a href="#!">Inspected</a></li>
-                <li><a href="#!">Billed</a></li>
-                <li><a href="#!">Overdue</a></li>
-                <li><a href="#!">Paid</a></li>
-                <li><a href="#!">Cancelled</a></li>
+                <li><a href="img/accbyinsage.pdf">Accounts Recievable Aging</a></li>
+                <li><a href="img/appraisertotals.pdf">Appraisals Completed and Billed</a></li>
+                <li><a href="img/appraisalcountbyins.pdf">Appraisal Count/Revenue Report</a></li>
+                <li><a href="img/accbyins.pdf">Accounts Recievable by Insurance Co.</a></li>
+                <li><a href="#!">Payments Recieved</a></li>
+                <li><a href="#!">Totals by Appraiser</a></li>
+                <li><a href="#!">Totals by Appraiser - Detail</a></li>
+
               </ul>
             </li>
-            <a class="waves-effect btn white black-text" href="#modal1">Change Dates</a>
+          
           </ul>
         </div>
       </nav>

@@ -57,7 +57,7 @@
 
     <!-- start of main left navigation -->
     <div class="page-container">
-         <ul id="slide-out" class="side-nav fixed iasred">
+      <ul id="slide-out" class="side-nav fixed iasred">
       <div class="logocorner">
         <div class="logoleft center"><img height="90px" src="http://www.iasclaimsgroup.com/wp-content/uploads/2013/10/logo.png">
           <br />
@@ -69,7 +69,8 @@
       </div>
       <li><a class="white-text skinny" href="index.html"><i class="material-icons white-text" style="font-size:25px;">dashboard</i>Quick Snapshot</a></li>
       <li><a class="white-text skinny" href="newassignments.html"><i class="material-icons white-text" style="font-size:25px;">assignment_ind</i>New Assignments</a></li>
-      <li><a class="white-text skinny" href="#!"><i class="material-icons white-text" style="font-size:25px;">account_balance</i>Billing Reports</a></li>
+      <li><a class="white-text skinny" href="payments.html"><i class="material-icons white-text" style="font-size:25px;">add_circle</i>New Payments</a></li>
+      <li><a class="white-text skinny" href="reports.html"><i class="material-icons white-text" style="font-size:25px;">account_balance</i>Billing Reports</a></li>
       <li class="">
         <ul class="collapsible collapsible-accordion">
           <li>
@@ -104,7 +105,7 @@
                             </div>
                         </nav>
                         <div class="card-content widgets-content">
-                            <h5 class="skinny center" style="">3 Days</h5>
+                            <h5 class="skinny center" style="">0 Days</h5>
                         </div>
                     </div>
                 </div>
@@ -165,7 +166,7 @@
                     <a class='dropdown-button waves-effect btn iasred' style="min-width:185px;" href='#' data-activates='dropdown4'><i class="material-icons white-text left">subject</i>Menu</a>
                     <!-- Dropdown Structure -->
                     <ul id='dropdown4' class='dropdown-content'>
-                        <li><a href="#!">Insurance Guidelines</a></li>
+                        <li><a href="img/guidelines.pdf">Insurance Guidelines</a></li>
                         <li><a href='#modal4'>Email Adjuster</a></li>
                         <li><a href="#!">Email Appraiser</a></li>
 
@@ -197,8 +198,8 @@
                     <ul id='printdropdown' class='dropdown-content'>
                         <li><a href="#!">Appraisal Request</a></li>
                         <li class="divider"></li>
-                        <li><a href="#!">Appraiser Report</a></li>
-                        <li><a href="#!">Supplement Report</a></li>
+                        <li><a href="img/repairable.pdf">Appraiser Report</a></li>
+                        <li><a href="img/suppreport.pdf">Supplement Report</a></li>
                         <li><a href="#!">Photos Report</a></li>
                         <li><a href="#!">Invoice</a></li>
                         <li><a href="#!">File Notes</a></li>
@@ -1471,7 +1472,7 @@
                             <div class="row">
                                 <div class="input-field col s3">
                                     <input type="date" id="suppdate" class="datepicker">
-                                    <label for="suppdate">Date of Supplement</label>
+                                    <label for="suppdate">Date of Supplement Inspection</label>
                                 </div>
                                 <div class="input-field col s4">
                                     <select>
@@ -1659,9 +1660,9 @@
                                     <a class='dropdown-button waves-effect btn iasred' style="" href='#' data-activates='printdropdown1'><i class="material-icons white-text left">subject</i>Create New Invoice/View Invoice</a>
                                     <!-- ezPrintJS for Print Request -->
                                     <ul id='printdropdown1' class='dropdown-content'>
-                                        <li><a href="#!">Invoice 1</a></li>
-                                        <li><a href="#!">Invoice 2</a></li>
-                                        <li><a href="#!">Invoice 3</a></li>
+                                        <li><a href="#!">Invoice 1 - 114114ALO</a></li>
+                                        <li><a href="#!">Invoice 2 - 114114ALO-2</a></li>
+                                        <li><a href="#!">Invoice 3 - 114114ALO-3</a></li>
                                         <li class="divider"></li>
                                         <li><a href="#!">New Invoice</a></li>
                                     </ul>
@@ -1682,13 +1683,12 @@
                                                     <option value="" disabled selected>Predefined Services</option>
                                                     <option value="1">Total Loss Report</option>
                                                     <option value="2">Repairable Report</option>
-                                                    <option value="3">Option 3</option>
-                                                    <option value="3">Option 4</option>
+                                                    <option value="3">Photos Only</option>
 
                                     </select>
                                 </div>
                                 <div class="input-field col s5">
-                                    <a class="btn iasred input-field" href="#predefindedservice">Add New Predefined Service</a>
+                                    <a class="btn iasred input-field" href="#predefindedservice">New Custom Service Rate</a>
                                 </div>
 
                             </div>
@@ -1746,7 +1746,7 @@
                             </div>
 
                             <div class="input-field col s4 " style="padding-left:10px;">
-                                <input type="checkbox" id="paid" />
+                                <input disabled type="checkbox" id="paid" />
                                 <label for="paid">Invoice Paid</label>
                             </div>
 
@@ -1863,7 +1863,7 @@
                     <label for="email_to">To:</label>
                 </div>
                 <div class="input-field col s6">
-                    <input id="email_subject" type="text" class="">
+                    <input id="email_subject" type="text" value="RE: CLAIM: 113221-2313211" class="">
                     <label for="email_subject">Email Subject:</label>
                 </div>
                 <div class="input-field col s12">
