@@ -197,7 +197,7 @@
                     <ul id='printdropdown' class='dropdown-content'>
                         <li><a href="#!">Appraisal Request</a></li>
                         <li class="divider"></li>
-                        <li><a href="#!">Appraiser Report</a></li>
+                        <li><a href="#!">Fire/Theft Report</a></li>
                         <li><a href="#!">Supplement Report</a></li>
                         <li><a href="#!">Photos Report</a></li>
                         <li><a href="#!">Invoice</a></li>
@@ -214,7 +214,7 @@
                         <li class="tab col s2"><a href="#general">General Info</a></li>
                         <li class="tab col s2"><a class="" href="#vehicle">Vehicle Info</a></li>
                         <li class="tab col s2"><a href="#imagemanager">File Manager</a></li>
-                        <li class="tab col s2"><a href="#report">Report</a></li>
+                        <li class="tab col s2"><a href="#report">Fire/Theft</a></li>
                         <li class="tab col s2"><a href="#suppreport">Supplements</a></li>
                         <li class="tab col s2"><a href="#invoice">Invoice</a></li>
 
@@ -1031,65 +1031,421 @@
                         <div class="col s12" style="padding:30px;">
 
                             <div class="card-head">
-                                <h4 class="skinny" style="padding:10px;">Appraiser Report</h4>
-                            </div>
-
-                            <div class="row">
-
-                                <div class="input-field col s4" style="padding-left:10px;">
-                                    <input type="checkbox" id="totallossindicator" />
-                                    <label for="totallossindicator">Activate Total Loss Fields?</label>
-                                </div>
-
-                                <div class="input-field col s4" style="padding-left:10px;">
-                                    <input type="checkbox" id="borderlinetl" />
-                                    <label for="borderlinetl">Borderline Total Loss?</label>
-                                </div>
-                            </div>
-
-                            <div class="row">
-
-                                <div class="input-field col s3">
-                                    <input id="towing" type="text" class="">
-                                    <label for="towing">Towing</label>
-
-                                </div>
-                                <div class="input-field col s3">
-                                    <input id="storage" type="text" class="">
-                                    <label for="storage">Storage</label>
-                                </div>
-                                <div class="input-field col s3">
-                                    <input id="daysince" type="text" class="">
-                                    <label for="daysince">Day Since</label>
-                                </div>
-
-                            </div>
-
-
-                            <div class="card-head">
-                                <h4 class="skinny" style="padding:10px;">UPD/Betterment</h4>
-                            </div>
-
-                            <div class="row">
-                                <div class="input-field col s10">
-                                    <textarea id="olddamagesdescrip" class="materialize-textarea"></textarea>
-                                    <label for="olddamagesdescrip">Old Damages</label>
-                                </div>
-                                <div class="input-field col s2">
-                                    <input id="olddamagestotal" placeholder="0.00" type="text" class="">
-                                    <label for="olddamagestotal">Total Old Damages</label>
-                                </div>
+                                <h4 class="skinny" style="padding:10px;">Fire/Theft Report</h4>
                             </div>
                             <div class="row">
-                                <div class="input-field col s10">
-                                    <textarea id="bettermenttext" class="materialize-textarea"></textarea>
-                                    <label for="bettermenttext">Betterment</label>
+                                <div class="col s6">
+                                    <h5 class="center">Indicators</h5>
+
+                                    <div class="col s12">VIN PLATE ALTERED
+                                        <div class="switch right">
+                                            <label>
+                                        NO
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">VIN PLATE MISSING
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">POINT OF ENTRY EVIDENT
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">SIGNS OF FORCED ENTRY
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">IGNITION DEFEATED
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">STEERING WHEEL LOCKED
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">STEERING WHEEL LOCKED
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">KEYS FOUND IN VEHICLE
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">ODOMETER DAMAGED
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col s12">ODOMETER READING
+                                            <div class="input-field col s3 right">
+                                                <input type="text" id="odometerread" placeholder="xx,xxx" class="">
+                                                <label for="odometerread"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">MILES MATCH VEHICLE COND.
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">PARTS REMOVED NEATLY
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">ENGINE PARTS MISSING
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">HOSES/WIRES CUT
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">FLUID LEVELS NORMAL
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">FLUID CONDITION GOOD
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">LUBE STICKERS PRESENT
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">DOES ENGINE RUN
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">TRUNK LOCK DAMAGED
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">TRUNK CONTENT INTACT
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">ALARM/ANTI THEFT DEVICE
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="input-field col s2">
-                                    <input id="bettermenttotal" placeholder="0.00" type="text" class="">
-                                    <label for="bettermentotal">Total Betterment</label>
+                                <!-- END OF INDICATOR ROW -->
+
+                                <div class="col s6">
+                                    <h5 class="center">Indicators</h5>
+
+
+                                    <div class="col s12">TIRE CONDITION GOOD
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">TIRES MATCH
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">STOICKERS MATCH LIC. PLATE
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">EVIDENCE OF RECENT REPAIRS
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col s12">SPARE TIRE MISSING
+                                        <div class="switch right">
+                                            <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <input type="text" id="leftfront" placeholder="0/32" class="">
+                                            <label for="leftfront">Left Front</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input type="text" id="rightfront" placeholder="0/32" class="">
+                                            <label for="rightfront">Right Front</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <input type="text" id="leftrear" placeholder="0/32" class="">
+                                            <label for="leftrear">Left Rear</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input type="text" id="rightrear" placeholder="0/32" class="">
+                                            <label for="rightrear">Right Rear</label>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="row" style="background-color:#f1f1f1; padding:20px;">
+                                        <h5 class="center">Fire Type</h5>
+
+
+                                        <div class="col s12">TOTAL BURN
+                                            <div class="switch right">
+                                                <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col s12">ELECTRICAL FIRE
+                                            <div class="switch right">
+                                                <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col s12">FUEL FIRE
+                                            <div class="switch right">
+                                                <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col s12">FUEL LINES CUT
+                                            <div class="switch right">
+                                                <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col s12">GAS CAP IN PLACE
+                                            <div class="switch right">
+                                                <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col s12">ARSON FIRE
+                                            <div class="switch right">
+                                                <label>
+                                        NO 
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                        YES
+                                        </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
                             </div>
+
+
+
+
+
+
 
                             <div class="card-head">
                                 <h4 class="skinny" style="padding:10px;">Appraiser Comments</h4>
@@ -1101,343 +1457,7 @@
                                 </div>
                             </div>
 
-                            <div id="hide-margin-bottom">
-                                <div class="card-head">
-                                    <h4 class="skinny" style="padding:10px;">Retail Book</h4>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s3">
-                                        <input id="retailbase" placeholder="0.00" type="text" class="">
-                                        <label for="retailbase">Retail Base</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s4"></div>
-                                    <div class="input-field col s2">
-                                        <input id="mileage" placeholder="0.00" type="text" class="">
-                                        <label for="mileage">Mileage</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <h6>Options</h6>
-                                    <div class="input-field col s4">
-                                        <input id="item1" placeholder="" type="text" class="">
-                                        <label for="item1"></label>
-                                    </div>
-                                    <div class="input-field col s2">
-                                        <input id="item1-value" placeholder="0.00" type="text" class="">
-                                        <label for="item1-value"></label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <input id="item2" placeholder="" type="text" class="">
-                                        <label for="item2"></label>
-                                    </div>
-                                    <div class="input-field col s2">
-                                        <input id="item2-value" placeholder="0.00" type="text" class="">
-                                        <label for="item2-value"></label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <input id="item3" placeholder="" type="text" class="">
-                                        <label for="item3"></label>
-                                    </div>
-                                    <div class="input-field col s2">
-                                        <input id="item3-value" placeholder="0.00" type="text" class="">
-                                        <label for="item3-value"></label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <input id="item3" placeholder="" type="text" class="">
-                                        <label for="item3"></label>
-                                    </div>
-                                    <div class="input-field col s2">
-                                        <input id="item3-value" placeholder="0.00" type="text" class="">
-                                        <label for="item3-value"></label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <input id="item3" placeholder="" type="text" class="">
-                                        <label for="item3"></label>
-                                    </div>
-                                    <div class="input-field col s2">
-                                        <input id="item3-value" placeholder="0.00" type="text" class="">
-                                        <label for="item3-value"></label>
-                                    </div>
-                                </div>
 
-                                <div class="row">
-                                    <div class="input-field col s4"></div>
-                                    <div class="input-field col s2">
-                                        <input id="nettotal" placeholder="0.00" type="text" class="">
-                                        <label for="nettotal">Net Total</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <select id="officalguide">
-                                                    <option value="1">NADA</option>
-                                                    <option value="2">KBB </option>
-                                                    </select>
-                                        <label for="officalguide">Offical Guide</label>
-                                    </div>
-                                    <div class="input-field col s2">
-                                        <input type="text" id="editiondate" class="">
-                                        <label for="editiondate">Edition Date</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end of retail book section -took row margin off -->
-                            <div class="card-head">
-                                <h4 class="skinny" style="padding:10px;">Repairable Vehicle Report</h4>
-                            </div>
-                            <div class="row">
-                                <div class="col s6 input-field">
-                                    <a class='waves-effect btn iasred' style="" href='#partsprovider'>Add New Parts Provider</a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s4">
-                                    <input type="text" id="partsprovider1" class="partsprovider">
-                                    <label for="partsprovider1">LKQ Part Provider 1</label>
-                                </div>
-                                <div class="input-field col s4">
-                                    <input type="text" id="partsprovider2" class="partsprovider">
-                                    <label for="partsprovider2">LKQ Part Provider 2</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s4">
-                                    <input type="text" id="partsprovider3" class="partsprovider">
-                                    <label for="partsprovider3">Aftermarket Provider 1</label>
-                                </div>
-                                <div class="input-field col s4">
-                                    <input type="text" id="partsprovider4" class="partsprovider">
-                                    <label for="partsprovider4">Aftermarket Provider 2</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s4">
-                                    <input type="text" id="partsprovider5" class="partsprovider">
-                                    <label for="partsprovider5">Recon Provider 1</label>
-                                </div>
-                                <div class="input-field col s4">
-                                    <input type="text" id="partsprovider6" class="partsprovider">
-                                    <label for="partsprovider6">Recon Provider 2</label>
-                                </div>
-                            </div>
-                            <div class="card-head">
-                                <h4 class="skinny" style="padding:10px;">Repair Summary</h4>
-                            </div>
-                            <div id="hide-margin-bottom">
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <input id="repaircost" placeholder="0.00" type="text" class="">
-                                        <label for="repaircost">Estimated Repair Cost</label>
-                                    </div>
-                                    <div class="col s3" style="margin-top:20px;">
-                                        <input type="checkbox" id="driveable" />
-                                        <label for="driveable">Is the vehicle drivable?</label>
-                                    </div>
-                                    <div class="col s3" style="margin-top:20px;">
-                                        <input type="checkbox" id="soc" />
-                                        <label for="soc">Shop of owners choice?</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <input id="bettermentsummary" placeholder="0.00" type="text" class="">
-                                        <label for="bettermentsummary">Betterment</label>
-                                    </div>
-                                    <div class="col s3" style="margin-top:20px;">
-                                        <input type="checkbox" id="shopcopy" />
-                                        <label for="shopcopy">Copy of estimate sent to shop?</label>
-                                    </div>
-                                    <div class="col s3" style="margin-top:20px;">
-                                        <input type="checkbox" id="ownercopy" />
-                                        <label for="ownercopy">Copy of Estimate sent to Owner?</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <input id="deductible" placeholder="0.00" type="text" class="">
-                                        <label for="deductible">Deductible</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <input disabled id="totaldeductions" placeholder="0.00" type="text" class="">
-                                        <label for="totaldeductions">Total Deductions</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <input disabled id="netamountsum" placeholder="0.00" type="text" class="">
-                                        <label for="netamountsum">Net Amount</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <input id="daystorepair" placeholder="0" type="text" class="">
-                                        <label for="daystorepair">Days to Repair</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <input id="percentagenada" placeholder="XX%" type="text" class="">
-                                        <label for="percentagenada">Percent of Nada</label>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="card-head">
-                                <h4 class="skinny" style="padding:10px;">Total Loss Vehicle Report</h4>
-                            </div>
-
-                            <br />
-
-                            <div class="row">
-                                <div class="input-field col s4">
-                                    <select>
-                                        <option value="" disabled selected>Select One</option>
-                                        <option value="1">Good</option>
-                                        <option value="2">Fair</option>
-                                        <option value="3">Poor</option>
-                                    </select>
-                                    <label>Overall Condition (Prior to loss)</label>
-                                </div>
-                                <div class="input-field col s4">
-                                    <select>
-                                        <option value="" disabled selected>Select One</option>
-                                        <option value="1">ADP</option>
-                                        <option value="2">CCC</option>
-                                        <option value="3">Mitchell</option>
-                                        <option value="3">Other</option>
-
-                                    </select>
-                                    <label>Total Loss Valuation Entity</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s4">
-                                    <input id="requestnumber" type="text" class="">
-                                    <label for="requestnumber">Request Number</label>
-                                </div>
-                                <div class="input-field col s4">
-                                    <textarea id="otherinfo" class="materialize-textarea"></textarea>
-                                    <label for="otherinfo">Other Information</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s5">
-                                    <input id="retail-value" placeholder="0.00" type="text" class="">
-                                    <label for="retail-value">Retail Market Value</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s5">
-                                    <input id="less-damages" placeholder="0.00" type="text" class="">
-                                    <label for="less-damages">Less Old Damages</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s5">
-                                    <input id="actual-value" placeholder="0.00" type="text" class="">
-                                    <label for="actual-value">Actual Cash Value</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s2">
-                                    <input id="salestaxperc" type="text" class="">
-                                    <label for="salestaxperc">Sales Tax %</label>
-                                </div>
-                                <div class="input-field col s3">
-                                    <input id="total-salestax" placeholder="0.00" type="text" class="">
-                                    <label for="total-salestax">Total Sales Tax</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s5">
-                                    <input id="settlement-value" placeholder="0.00" type="text" class="">
-                                    <label for="settlement-value">Settlement Value</label>
-                                </div>
-                            </div>
-
-                            <div class="card-head">
-                                <h4 class="skinny" style="padding:10px;">Salvage Bids</h4>
-                            </div>
-
-
-                            <div class="row">
-                                <div class="input-field col s4">
-                                    <select>
-                                        <option value="" disabled selected>Select One</option>
-                                        <option value="1">IAA - 1-800-123-4567</option>
-                                        <option value="2">Bidfast</option>
-                                        <option value="3">Copart</option>
-                                    </select>
-                                    <label>Buyer</label>
-                                </div>
-                                <div class="input-field col s4">
-                                    <input id="bid-value" placeholder="0.00" type="text" class="">
-                                    <label for="bid-value">Bid</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s4">
-                                    <select>
-                                        <option value="" disabled selected>Select One</option>
-                                        <option value="1">IAA - 1-800-123-4567</option>
-                                        <option value="2">Bidfast</option>
-                                        <option value="3">Copart</option>
-                                    </select>
-                                    <label>Buyer</label>
-                                </div>
-                                <div class="input-field col s4">
-                                    <input id="bid-value" placeholder="0.00" type="text" class="">
-                                    <label for="bid-value">Bid</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s4">
-                                    <select>
-                                        <option value="" disabled selected>Select One</option>
-                                        <option value="1">IAA - 1-800-123-4567</option>
-                                        <option value="2">Bidfast</option>
-                                        <option value="3">Copart</option>
-                                    </select>
-                                    <label>Buyer</label>
-                                </div>
-                                <div class="input-field col s4">
-                                    <input id="bid-value" placeholder="0.00" type="text" class="">
-                                    <label for="bid-value">Bid</label>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row" style="padding-top:15px;">
-                                <div class="input-field col s4">
-                                    <select>
-                                        <option value="" disabled selected>Select One</option>
-                                        <option value="1">IAA - 1-800-123-4567</option>
-                                        <option value="2">Bidfast</option>
-                                        <option value="3">Copart</option>
-                                    </select>
-                                    <label>Salvage Pool</label>
-                                </div>
-                                <div class="input-field col s4">
-                                    <input id="stall-number" type="text" class="">
-                                    <label for="stall-number">Stall Number</label>
-                                </div>
-                                <div class="input-field col s4" style="padding-left:10px;">
-                                    <input type="checkbox" id="permission" />
-                                    <label for="permission">Permission</label>
-                                </div>
-                            </div>
 
 
                         </div>
@@ -2066,26 +2086,26 @@
                         <label for="add_adjuster_modal">Adjuster Name</label>
                     </div>
                     <div class="input-field col s6">
-                        <input type="text" id="add_phone_modal" class="">
-                        <label for="add_phone_modal">Adjuster Phone</label>
+                        <input type="text" id="add_phone_modal" class="" offfocus="addtoDB()>
+                        <label for=" add_phone_modal ">Adjuster Phone</label>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="input-field col s3">
-                        <input type="text" id="add_phone_ext_modal" class="">
-                        <label for="add_phone_ext_modal">Adjuster Extension</label>
+                <div class="row ">
+                    <div class="input-field col s3 ">
+                        <input type="text " id="add_phone_ext_modal " class=" ">
+                        <label for="add_phone_ext_modal ">Adjuster Extension</label>
                     </div>
-                    <div class="input-field col s6">
-                        <input type="text" id="add_email_modal" class="">
-                        <label for="add_email_modal">Adjuster Email</label>
+                    <div class="input-field col s6 ">
+                        <input type="text " id="add_email_modal " class=" ">
+                        <label for="add_email_modal ">Adjuster Email</label>
                     </div>
                 </div>
 
             </div>
-            <div class="row"></div>
+            <div class="row "></div>
         </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" @click="enterAdjusterintoDatabase()">Add New Adjuster</a>
+        <div class="modal-footer ">
+            <a href="#! " class="modal-action modal-close waves-effect waves-green btn-flat " @click="enterAdjusterintoDatabase() ">Add New Adjuster</a>
         </div>
     </div>
 
@@ -2124,10 +2144,10 @@
 
     <!--  Scripts-->
 
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/Sortable/1.6.0/Sortable.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js "></script>
+    <script src="js/materialize.js "></script>
+    <script src="js/init.js "></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/Sortable/1.6.0/Sortable.min.js "></script>
 </body>
 
 </html>
