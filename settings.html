@@ -57,7 +57,7 @@
   <!-- start of main left navigation -->
 
   <div class="page-container">
-  <ul id="slide-out" class="side-nav fixed iasred">
+    <ul id="slide-out" class="side-nav fixed iasred">
       <div class="logocorner">
         <div class="logoleft center"><img height="90px" src="http://www.iasclaimsgroup.com/wp-content/uploads/2013/10/logo.png">
           <br />
@@ -94,132 +94,53 @@
 
     <div class="main-content-area" style="padding:30px;padding-top:0px;padding-bottom:0px;">
 
+
+
       <!-- Dashboard Table Start  -->
+      <div class="row">
 
-      <nav>
-        <div class="nav-wrapper iasred">
-          <a href="#!" class="brand-logo white-text" style="margin-left:20px;"><i class="material-icons white-text">assignment_ind</i>Insurance Profiles </a>
-          <ul class="right hide-on-med-and-down">
-            <a class="waves-effect btn white black-text" href="#insurancemodal">New Profile</a>
-            <a class="waves-effect btn white black-text" href="reports.html">Reports</a>
-            <a class="waves-effect btn white black-text" href="#">Print List</a>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="card">
-        <table class="striped centered responsive-table">
-          <thead>
-            <tr>
-              <th>Insurance Name</th>
-              <th>City, State</th>
-              <th>Repairable Rate</th>
-              <th>Total Loss Rate</th>
-              <th>Per Mile Rate</th>
-              <th>Contact #</th>
-              <th>Custom Header?</th>
-              <th>View/Edit</th>
-            </tr>
-          </thead>
-          <tr class="">
-            <td>Amica</td>
-            <td>Portland, OR</td>
-            <td>$100</td>
-            <td>$125</td>
-            <td>$1</td>
-            <td>503-252-1322</td>
-            <td>YES</td>
-            <td><a href="#insurancemodal">View</a></td>
-          </tr>
-          <tr class="">
-            <td>Amica</td>
-            <td>Portland, OR</td>
-            <td>$100</td>
-            <td>$125</td>
-            <td>$1</td>
-            <td>503-252-1322</td>
-            <td>YES</td>
-            <td><a href="#insurancemodal">View</a></td>
-          </tr>
-          <tr class="">
-            <td>Amica</td>
-            <td>Portland, OR</td>
-            <td>$100</td>
-            <td>$125</td>
-            <td>$1</td>
-            <td>503-252-1322</td>
-            <td>YES</td>
-            <td><a href="#insurancemodal">View</a></td>
-          </tr>
-          <tr class="">
-            <td>Amica</td>
-            <td>Portland, OR</td>
-            <td>$100</td>
-            <td>$125</td>
-            <td>$1</td>
-            <td>503-252-1322</td>
-            <td>YES</td>
-            <td><a href="#insurancemodal">View</a></td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
-      <!-- Dashboard Table End  -->
-
-
-    </div>
-    <!-- main-content-area End  -->
-
-    <!-- SHOP MODAL ENTER NEW SHOP -->
-    <div id="insurancemodal" class="modal">
-      <div class="modal-content">
-        <div class="row">
-          <div class="input-field col s4">
-            <input id="ins_name" type="text" class="">
-            <label for="ins_name">Insurance Co. Name</label>
-
+        <div class="col s12 card" style="padding:40px;border-top: 5px solid #f0ad4e;">
+          <div class="col s12">
+            <center> <img height="90px" src="http://www.iasclaimsgroup.com/wp-content/uploads/2013/10/logo.png"></center>
           </div>
-          <div class="input-field col s2">
-            <input id="ins_suff" type="text" class="">
-            <label for="ins_suff">Suffix</label>
-          </div>
-
-        </div>
-        <div class="row">
-
-          <div class="input-field col s4">
-            <input id="ins_work_phone" type="text" class="">
-            <label for="ins_work_phone">Contact Phone</label>
+          <div class="col s12">
+            <center>
+              <h5>Appraisal Management System Settings</h5>
+            </center>
           </div>
           <div class="input-field col s4">
-            <input id="ins_email" type="text" class="">
-            <label for="ins_email">Contact Email</label>
+            <input disabled id="make" type="text" class="">
+            <label for="make">Starting Index Number</label>
+          </div>
+
+          <div class="input-field col s4">
+            <input type="text" id="shop_name_modal" class="shopname">
+            <label for="shop_name_modal">Office Name</label>
           </div>
           <div class="input-field col s4">
-            <input id="ins_fax" type="text" class="">
-            <label for="ins_fax">Contact Fax</label>
+            <input id="shop_phone_modal" type="text" class="">
+            <label for="shop_phone_modal">Office Phone</label>
           </div>
 
-        </div>
+          <div class="row">
+            <div class="input-field col s10">
+              <input id="shop_add_modal" type="text" class="">
+              <label for="shop_add_modal">Address</label>
 
-        <div class="row">
-          <div class="input-field col s5">
-            <input id="ins_add" type="text" class="">
-            <label for="ins_add">Billing Address</label>
+            </div>
+            <div class="input-field col s2">
+              <input id="shop_suite_modal" type="text" class="">
+              <label for="shop_suite_modal">Suite/Apt.</label>
+            </div>
+          </div>
 
-          </div>
-          <div class="input-field col s2">
-            <input id="ins_suite" type="text" class="">
-            <label for="ins_suite">Suite/Apt.</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s3">
-            <input id="ins_city" type="text" class="">
-            <label for="ins_city">City</label>
-          </div>
-          <div class="input-field col s2">
-            <select>
+          <div class="row">
+            <div class="input-field col s4">
+              <input id="shop_city_modal" type="text" class="">
+              <label for="shop_city_modal">City</label>
+            </div>
+            <div class="input-field col s4">
+              <select>
                                                 <option value="" disabled selected>State</option>
                                                 <option value="AL">Alabama</option>
                                                 <option value="AK">Alaska</option>
@@ -273,104 +194,100 @@
                                                 <option value="WI">Wisconsin</option>
                                                 <option value="WY">Wyoming</option>
                                             </select>
-          </div>
-          <div class="input-field col s2">
-            <input id="ins_zip" type="text" class="">
-            <label for="ins_zip">Zip Code</label>
-          </div>
-
-        </div>
-
-        <div class="row">
-          <div class="input-field col s3">
-            <input id="tlrate" type="text" class="">
-            <label for="tlrate">Total Loss Rate</label>
-          </div>
-          <div class="input-field col s3">
-            <input id="repairrate" type="text" class="">
-            <label for="repairrate">Repairable Rate</label>
-          </div>
-          <div class="input-field col s3">
-            <input id="photos" type="text" class="">
-            <label for="photos">Photos Rate</label>
-          </div>
-          <div class="input-field col s3">
-            <input id="photos" type="text" class="">
-            <label for="photos">Supplement Rate</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s3">
-            <input id="tlrate" type="text" class="">
-            <label for="tlrate">Per Mile Rate</label>
-          </div>
-        </div>
-        <div class="row">
-
-          <div class="input-field col s12">
-            <textarea id="summaryofloss" class="materialize-textarea"></textarea>
-            <label for="summaryofloss">Notes</label>
-          </div>
-
-        </div>
-        <div class="row">
-          <h5>Requirements/Guidelines</h5>
-          <div class="col s6">
-            <div class="file-field input-field">
-              <div class="btn iasred">
-                <span>Upload Requirement/Guidelines PDFs</span>
-                <input type="file">
-              </div>
+            </div>
+            <div class="input-field col s3">
+              <input id="shop_zip_modal" type="text" class="">
+              <label for="shop_zip_modal">Zip Code</label>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col s12">
-            <h5>Custom Header Text</h5>
-            <div class="switch">
-              <label>
-              Off
-              <input type="checkbox">
-              <span class="lever"></span>
-              On
-            </label>
-            </div>
-          </div>
-          <!-- Switch -->
-
           <div class="row">
             <div class="input-field col s3">
-              <input id="line1" type="text" class="">
-              <label for="line1">Line 1</label>
-            </div>
-            <div class="input-field col s3">
-              <input id="line2" type="text" class="">
-              <label for="line2">Line 2</label>
-            </div>
-            <div class="input-field col s3">
-              <input id="line3" type="text" class="">
-              <label for="line3">Line 3</label>
-            </div>
-            <div class="input-field col s3">
-              <input id="line4" type="text" class="">
-              <label for="line4">Line 4</label>
+              <input id="shop_zip_modal1" type="text" class="">
+              <label for="shop_zip_modal1">Send Email As:</label>
             </div>
           </div>
-          <small>Instead of the IAS Logo, you can put alternate text in the header when representing 3rd party clients</small>
+          <div class="row">
+            <div class="input-field col s3">
+              <input id="shop_zip_modal1" type="text" class="">
+              <label for="shop_zip_modal1">Email SMTP Server</label>
+            </div>
+            <div class="input-field col s3">
+              <input id="shop_zip_modal1" type="text" class="">
+              <label for="shop_zip_modal1">SMTP Server Username</label>
+            </div>
+            <div class="input-field col s3">
+              <input id="shop_zip_modal1" type="text" class="">
+              <label for="shop_zip_modal1">SMTP Server Password</label>
+            </div>
+            <div class="input-field col s3">
+              <input id="shop_zip_modal1" type="text" class="">
+              <label for="shop_zip_modal1">SMTP PORT</label>
+            </div>
+          </div>
+          <div class="row">
+            <h5 class="center">Invoice Designer</h5>
+             <div class="input-field col s12">
+              <textarea id="summaryofloss" class="materialize-textarea"></textarea>
+              <label for="summaryofloss">Invoice Header</label>
+            </div>
+            <div class="input-field col s4">
+              <textarea id="summaryofloss" class="materialize-textarea"></textarea>
+              <label for="summaryofloss">Invoice Left Column</label>
+            </div>
+             <div class="input-field col s4">
+              <textarea id="summaryofloss" class="materialize-textarea"></textarea>
+              <label for="summaryofloss">Invoice Middle Column</label>
+            </div>
+             <div class="input-field col s4">
+              <textarea id="summaryofloss" class="materialize-textarea"></textarea>
+              <label for="summaryofloss">Invoice Right Column</label>
+            </div>
+            
+            <div class="input-field col s12">
+              <textarea id="summaryofloss" class="materialize-textarea"></textarea>
+              <label for="summaryofloss">Invoice Footer</label>
+            </div>
+            
+          </div>
 
-          <a href="img/example.pdf">Example Header</a>
 
-          <!-- end of shop information area -->
+
+
         </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save Insurance Profile</a>
-        </div>
+        <!-- card End  -->
+
       </div>
 
 
-
     </div>
-    <!-- entire page container End  -->
+    <!-- main-content-area End  -->
+
+
+
+
+
+
+
+    <!-- MODALS FOR DASHBOARD -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <!-- Calentim - Date Time Range Picker Here -->
+        <div class="row">
+          <div class="col s12 center">
+            <h4 class="skinny">Choose Dates to review</h4>
+            <img src="img/datepicker.png" height="390px">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+      </div>
+    </div>
+
+
+
+  </div>
+  <!-- entire page container End  -->
 
 
 
@@ -391,10 +308,10 @@
 
 
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 
 </body>
 

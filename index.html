@@ -36,21 +36,20 @@
 
     <div class="col s3 white">
       <div class="usermenu">
-        <a class="waves-effect btn iasred right" href="#"><i class="material-icons white-text ">notifications_on</i></a>
+        <a class="waves-effect btn iasred right" href="#remindersmodal"><i class="material-icons white-text ">notifications_on</i></a>
         
         <a class='dropdown-button waves-effect btn iasred right' href='#' data-activates='dropdown3'><i class="material-icons white-text left">perm_identity</i>My Account</a>
          <!-- Dropdown Structure -->
                 <ul id='dropdown3' class='dropdown-content'>
-                    <li><a href="#!">My Profile</a></li>
+                    <li><a href="#!">Change Password</a></li>
                     <li class="divider"></li>
-                    <li><a href="#!">Request Help</a></li>
-                    <li><a href="#!">Sign Out</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                    <li><a href="login.html">Sign Out</a></li>
                 </ul>
       </div>
     </div>
 
   </div>
-
   <!-- end of topbar/search -->
 
 
@@ -388,6 +387,24 @@
           <div class="col s12 center">
             <h4 class="skinny">Choose Dates to review</h4>
             <img src="img/datepicker.png" height="390px">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+      </div>
+    </div>
+
+    <!-- MODALS FOR DASHBOARD -->
+    <div id="remindersmodal" class="modal">
+      <div class="modal-content">
+        <!-- Calentim - Date Time Range Picker Here -->
+        <div class="row">
+          <div class="col s12 center">
+            <h4 class="skinny">Active Reminders</h4>
+            <center><a href="filenotes.html">Appointment Set: 1124112ALO</a><br /><small>Reminder Set for: July 5th, 2017 - 10:00AM</small></center>
+            <br />
+            <center><a href="filenotes.html">Call Shop: 1124111ALO</a><br /><small>Reminder Set for: July 6th, 2017 - 11:00AM</small></center>
           </div>
         </div>
       </div>
